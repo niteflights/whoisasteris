@@ -7,32 +7,30 @@
   {
     "type": "linkedin",
     "title": "Talk at the Aerospace Tech Week",
-    "desc": "Digital twins, predictive ops, and safety-critical AI.",
     "urn": "urn:li:activity:7190826815655919616"
   },
   {
     "type": "linkedin",
     "title": "Talk at the AI Tech Summit",
-    "desc": "Trustworthy AI for Operational Decision Support.",
     "urn": "urn:li:activity:7115102238502445056"
   },
     {
     "type": "youtube",
     "title": "Podcast at the World Summit AI",
-    "desc": "On AI for aviation and operational impact.",
+    "desc": "AI for commercial aviation and the operational impact on airlines.",
     "videoId": "xxs97rkBBPM"
   },
   {
     "type": "youtube",
     "title": "Interview at Aerospace Tech Week",
-    "desc": "On predictive maintenance and airline operations.",
+    "desc": "Trustworthy AI for Predictive Maintenance and airline operations.",
     "videoId": "H3056OWCMhI",
     "extraImage": "https://media.licdn.com/dms/image/v2/D4D22AQF0dPw42FK61A/feedshare-shrink_800/feedshare-shrink_800/0/1714426710996?e=1760572800&v=beta&t=_pBZdXrvUNfkGpjWsYYHdAnVqis5s8fSSQfq7DQMuTE"
   },
   {
     "type": "youtube",
     "title": "Lecture at the Alan Turing Institute",
-    "desc": "Trustworthy AI and simulation in safety-critical settings.",
+    "desc": "Trustworthy AI and simulation methods in safety-critical settings.",
     "videoId": "dL4AOCT-7ds"
   }
 ]
