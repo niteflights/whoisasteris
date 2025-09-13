@@ -101,7 +101,7 @@ img { max-width: 100%; height: auto; }
 
 /* Smaller tile visuals */
 .tiles--compact .tile img {
-  height: 120px;             /* was 160px */
+  height: 220px;             /* was 160px */
   object-fit: cover;
 }
 .tiles--compact .tile img { height: 180px; }
