@@ -7,32 +7,32 @@
   },
   {
     "type": "linkedin",
-    "title": "Talk \u2014 Aerospace Tech Week",
+    "title": "Talk at the Aerospace Tech Week",
     "desc": "Digital twins, predictive ops, and trustworthy AI.",
     "urn": "urn:li:activity:7190826815655919616"
   },
   {
     "type": "linkedin",
-    "title": "Talk \u2014 AI Tech Summit",
+    "title": "Talk at the AI Tech Summit",
     "desc": "Digital twins, predictive ops, and trustworthy AI.",
     "urn": "urn:li:activity:7115102238502445056"
   },
     {
     "type": "youtube",
-    "title": "Podcast \u2014 World Summit AI",
+    "title": "Podcast at the World Summit AI",
     "desc": "On AI for aviation and operational impact.",
     "videoId": "xxs97rkBBPM"
   },
   {
     "type": "youtube",
-    "title": "Interview \u2014 Aerospace Tech Week",
+    "title": "Interview at the Aerospace Tech Week",
     "desc": "On predictive maintenance and airline operations.",
     "videoId": "H3056OWCMhI",
     "extraImage": "https://media.licdn.com/dms/image/v2/D4D22AQF0dPw42FK61A/feedshare-shrink_800/feedshare-shrink_800/0/1714426710996?e=1760572800&v=beta&t=_pBZdXrvUNfkGpjWsYYHdAnVqis5s8fSSQfq7DQMuTE"
   },
   {
     "type": "youtube",
-    "title": "Lecture \u2014 The Alan Turing Institute",
+    "title": "Lecture at the Alan Turing Institute",
     "desc": "Trustworthy AI and simulation in safety-critical settings.",
     "videoId": "dL4AOCT-7ds"
   }
