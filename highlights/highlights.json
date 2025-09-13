@@ -1,0 +1,40 @@
+[
+  {
+    "type": "link",
+    "title": "Interview with Outgrow \u2014 World Summit AI",
+    "desc": "On AI for aviation and operational impact.",
+    "href": "https://premade.outgrow.us/interview-with-asteris-apostolidis?utm_campaign=podcast&utm_medium=organic_social&utm_source=linkedin67206453248%29"
+  },
+  {
+    "type": "link",
+    "title": "EASA Rulemaking Task \u2014 Trustworthy AI in Aviation",
+    "desc": "Member of EASA\u2019s rulemaking group; photo from EASA AI Days.",
+    "href": "https://www.easa.europa.eu/en/document-library/terms-of-reference-and-rulemaking-group-compositions/tor-rmt0742",
+    "image": "https://media.licdn.com/dms/image/v2/D4D22AQGefrghaX37LA/feedshare-shrink_2048_1536/B4DZkAFzT7GsAw-/0/1756643146289?e=1760572800&v=beta&t=30PiwM9Gw7i_gDUs9xvq8URtc_oQgkLqgJRNpx1wSNk"
+  },
+  {
+    "type": "linkedin",
+    "title": "Talk \u2014 AI Tech Summit",
+    "desc": "Digital twins, predictive ops, and trustworthy AI.",
+    "urn": "urn:li:activity:7115102238502445056"
+  },
+  {
+    "type": "link",
+    "title": "Aerospace America \u2014 Decarbonizing by 2050",
+    "desc": "Perspectives on realism vs optimism in aviation sustainability.",
+    "href": "https://aerospaceamerica.aiaa.org/departments/decarbonizing-by-2050-optimists-pessimists-and-realists/"
+  },
+  {
+    "type": "youtube",
+    "title": "Interview \u2014 Aerospace Tech Week",
+    "desc": "On predictive maintenance and airline operations.",
+    "videoId": "H3056OWCMhI",
+    "extraImage": "https://media.licdn.com/dms/image/v2/D4D22AQF0dPw42FK61A/feedshare-shrink_800/feedshare-shrink_800/0/1714426710996?e=1760572800&v=beta&t=_pBZdXrvUNfkGpjWsYYHdAnVqis5s8fSSQfq7DQMuTE"
+  },
+  {
+    "type": "youtube",
+    "title": "Lecture \u2014 IET & The Alan Turing Institute",
+    "desc": "Trustworthy AI and simulation in safety-critical settings.",
+    "videoId": "dL4AOCT-7ds"
+  }
+]

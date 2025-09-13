@@ -1,0 +1,25 @@
+
+/* Highlights section — minimal & chic */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+.hl-card {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+.hl-media { margin-bottom: 8px; }
+.hl-media iframe, .hl-media img, .hl-media video { width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0,0,0,.06); }
+.hl-title { font-size: 1.05rem; margin: 6px 0 4px; }
+.hl-title a { color: inherit; text-decoration: none; }
+.hl-title a:hover { text-decoration: underline; }
+.hl-desc { color: #6b7280; margin: 0; font-size: .95rem; }
+
+/* LinkedIn embed sizing */
+.hl-media .linkedin-embed { width: 100%; min-height: 520px; border: 0; }
+@media (max-width: 480px) {
+  .hl-media .linkedin-embed { min-height: 560px; }
+}
