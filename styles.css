@@ -110,4 +110,34 @@ img { max-width: 100%; height: auto; }
 .tiles--compact .tile-body p  { font-size: 0.92rem; margin: 0 0 6px; }
 .tiles--compact .tile-meta    { font-size: 0.8rem; }
 
+/* About section */
+.about .about-wrap{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about .about-photo{
+  width: 160px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+.about .about-text h2{
+  font-size: 1.4rem;
+  margin: 0 0 .6rem;
+}
+@media (min-width: 980px){
+  .about .about-wrap{ grid-template-columns: 200px 1fr; }
+  .about .about-photo{ width: 200px; }
+}
+@media (max-width: 640px){
+  .about .about-wrap{ grid-template-columns: 1fr; }
+  .about .about-photo{ width: 140px; margin: 0 auto; }
+  .about .about-text{ text-align: left; }
+}
+
 @media (max-width:760px){ .nav-toggle{ display:inline-block; background:var(--panel); color:var(--text); border:1px solid var(--border); padding:.45rem .55rem; border-radius:8px } .nav-list{ display:none; position:absolute; right:1rem; top:56px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:.5rem; flex-direction:column } .nav.open .nav-list{ display:flex } .section{ padding:28px 1rem } }
