@@ -146,6 +146,30 @@ img { max-width: 100%; height: auto; }
   max-width: 1100px;   /* optional, keeps the row tidy */
   margin: 0 auto;
 }
+
+/* Focus card images */
+.card-media{
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: .55rem;
+}
+.card-media img{
+  display: block;
+  width: 100%;
+  height: 160px;        /* adjust 140–200px to taste */
+  object-fit: cover;
+}
+
+/* If your grid doesn’t already define columns, keep this */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 12px;
+}
+@media (max-width: 900px){ .cards{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px){ .cards{ grid-template-columns: 1fr; } }
+
 @media (max-width: 900px){ .tiles--three{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 600px){ .tiles--three{ grid-template-columns: 1fr; } }
 
