@@ -167,6 +167,32 @@ img { max-width: 100%; height: auto; }
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 12px;
 }
+
+/* Make all links black with an underline */
+a,
+a:visited {
+  color: #111 !important;                 /* black */
+  text-decoration: underline;             /* keep underline */
+  text-underline-offset: 3px;
+}
+
+/* Slightly stronger hover underline (still black) */
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Keep buttons looking like buttons (don’t turn those links black/underlined) */
+a.btn,
+a.btn:visited {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* (Optional) Keep top-nav tidy: no underline until hover */
+.nav-list a { text-decoration: none; }
+.nav-list a:hover { text-decoration: underline; }
+
+
 @media (max-width: 900px){ .cards{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 600px){ .cards{ grid-template-columns: 1fr; } }
 
