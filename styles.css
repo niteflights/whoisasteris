@@ -168,6 +168,14 @@ img { max-width: 100%; height: auto; }
   gap: 12px;
 }
 
+@media (max-width: 900px){ .cards{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px){ .cards{ grid-template-columns: 1fr; } }
+
+@media (max-width: 900px){ .tiles--three{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px){ .tiles--three{ grid-template-columns: 1fr; } }
+
+@media (max-width:760px){ .nav-toggle{ display:inline-block; background:var(--panel); color:var(--text); border:1px solid var(--border); padding:.45rem .55rem; border-radius:8px } .nav-list{ display:none; position:absolute; right:1rem; top:56px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:.5rem; flex-direction:column } .nav.open .nav-list{ display:flex } .section{ padding:28px 1rem } }
+
 /* Make all links black with an underline */
 a,
 a:visited {
@@ -192,11 +200,28 @@ a.btn:visited {
 .nav-list a { text-decoration: none; }
 .nav-list a:hover { text-decoration: underline; }
 
+/* Smooth transitions for Focus cards */
+.cards .card{
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
+}
 
-@media (max-width: 900px){ .cards{ grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 600px){ .cards{ grid-template-columns: 1fr; } }
+/* Hover/keyboard highlight */
+.cards .card:hover,
+.cards .card:focus-within{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: var(--accent, #111);
+  background: #fff; /* keep it minimal; tweak if you use a panel color */
+}
 
-@media (max-width: 900px){ .tiles--three{ grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 600px){ .tiles--three{ grid-template-columns: 1fr; } }
+/* Visible focus outline for accessibility (Tab key) */
+.cards .card:focus-visible{
+  outline: 2px solid var(--accent, #111);
+  outline-offset: 3px;
+}
 
-@media (max-width:760px){ .nav-toggle{ display:inline-block; background:var(--panel); color:var(--text); border:1px solid var(--border); padding:.45rem .55rem; border-radius:8px } .nav-list{ display:none; position:absolute; right:1rem; top:56px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:.5rem; flex-direction:column } .nav.open .nav-list{ display:flex } .section{ padding:28px 1rem } }
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce){
+  .cards .card{ transition: none; }
+  .cards .card:hover{ transform: none; }
+}
