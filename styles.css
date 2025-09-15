@@ -225,3 +225,10 @@ a.btn:visited {
   .cards .card{ transition: none; }
   .cards .card:hover{ transform: none; }
 }
+a.btn.ghost,
+a.btn.ghost:visited {
+  color: var(--accent) !important;
+  background: transparent;
+  border: 1px solid var(--accent);
+}
+
