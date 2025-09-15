@@ -1,19 +1,19 @@
 [
   {    
     "type": "youtube",
-    "title": "Interview with World Summit AI",
+    "title": "Interview World Summit AI",
     "desc": "AI for commercial aviation and the operational impact on airlines.",
     "videoId": "xxs97rkBBPM"
   },
   {
     "type": "youtube",
-    "title": "Interview with Aerospace Tech Week",
+    "title": "Interview Aerospace Tech Week",
     "desc": "Trustworthy AI for Predictive Maintenance and airline operations.",
     "videoId": "H3056OWCMhI"
   },
   {
     "type": "youtube",
-    "title": "Lecture at The Alan Turing Institute",
+    "title": "Talk at The Alan Turing Institute",
     "desc": "Trustworthy AI and simulation methods in safety-critical settings.",
     "videoId": "dL4AOCT-7ds"
   },
