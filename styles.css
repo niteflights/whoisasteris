@@ -273,3 +273,43 @@ a.btn.ghost:visited {
   .item.appt{ transition: none; }
   .item.appt:hover{ transform: none; }
 }
+/* Appointments: tighter spacing + distinct sizes */
+.item.appt{ 
+  line-height: 1.5;                /* was 1.65 globally */
+  padding: .8rem .85rem;           /* slightly tighter tile padding */
+}
+
+/* Headings inside each appointment */
+.item.appt h3{ 
+  margin: 0 0 .35rem; 
+  line-height: 1.35;               /* tighter line spacing */
+}
+
+/* 1st line = company (largest) */
+.item.appt h3:nth-of-type(1){
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+/* 2nd line = role (a bit smaller) */
+.item.appt h3:nth-of-type(2){
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+/* 3rd line = dates/location (smallest) */
+.item.appt h3:nth-of-type(3){
+  font-size: .95rem;
+  font-weight: 500;
+}
+.item.appt h3:nth-of-type(3) .muted{ color: var(--muted); }
+
+/* Bullet list: reduce gaps */
+.item.appt ul{
+  margin: .35rem 0 0;              /* smaller top margin */
+  padding-left: 1rem;
+}
+.item.appt li{ 
+  margin: .2rem 0;                 /* tighter between bullets */
+}
+
