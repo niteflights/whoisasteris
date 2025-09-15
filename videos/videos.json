@@ -16,5 +16,23 @@
     "title": "Lecture at the Alan Turing Institute",
     "desc": "Trustworthy AI and simulation methods in safety-critical settings.",
     "videoId": "dL4AOCT-7ds"
+  },
+  {
+    "type": "youtube",
+    "title": "About the KLM BlueLabs",
+    "desc": "Technical Innovation within a major European airline. How we do it.",
+    "videoId": "jvXuCKETcTM"
+  }, 
+  {
+    "type": "youtube",
+    "title": "Interview with the Fairval podcast",
+    "desc": "How to leverage AI & Data for sustainable, value-driven air travel",
+    "videoId": "TJt1V-Tm3ss"
+  },
+  {
+    "type": "youtube",
+    "title": "TWINOP Digital Twin Introduction",
+    "desc": "A high-fidelity Digital Twin PoC for aircraft turnaround Ops ",
+    "videoId": "RKfXbpN-0qg"
   }
 ]
