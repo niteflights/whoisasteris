@@ -233,3 +233,43 @@ a.btn.ghost:visited {
   border: 1px solid var(--accent);
 }
 
+/* Make the whole appointment tile behave like a clickable card */
+.item.appt{
+  position: relative;                 /* anchor overlay positioning */
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: .9rem;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
+  cursor: pointer;
+}
+
+/* Hover & keyboard focus highlight */
+.item.appt:hover,
+.item.appt:focus-within{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: var(--accent, #111);
+  background: #fff;
+}
+
+/* Accessible focus ring when tabbing onto the tile */
+.item.appt:focus-visible{
+  outline: 2px solid var(--accent, #111);
+  outline-offset: 3px;
+}
+
+/* The ‘stretched’ link that covers the whole tile (but stays visually invisible) */
+.item.appt .stretched-link{
+  position: absolute;
+  inset: 0;                           /* cover entire tile */
+  z-index: 5;
+  text-decoration: none !important;   /* override global link underline */
+  color: inherit !important;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .item.appt{ transition: none; }
+  .item.appt:hover{ transform: none; }
+}
