@@ -312,4 +312,35 @@ a.btn.ghost:visited {
 .item.appt li{ 
   margin: .2rem 0;                 /* tighter between bullets */
 }
+/* Mobile hero typography: make name/subtitle more subtle */
+@media (max-width: 640px){
+  .hero{
+    padding: 30px 1rem 10px;
+  }
 
+  .hero h1{
+    font-size: 1.55rem;
+    line-height: 1.2;
+    margin: .45rem 0 .15rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .kicker{
+    font-size: .88rem;
+    line-height: 1.35;
+    font-weight: 500;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .cta-row{
+    margin-top: .55rem;
+    gap: .45rem;
+  }
+
+  .cta-row .btn{
+    padding: .5rem .7rem;
+    font-size: .9rem;
+  }
+}
