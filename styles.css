@@ -344,57 +344,58 @@ a.btn.ghost:visited {
     font-size: .9rem;
   }
 }
-/* New isolated split intro — avoids conflict with old .hero/.headshot styles */
-.intro-split{
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+
+/* Split landing hero — isolated from old .hero styles */
+.landing-hero{
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
   gap: 2rem;
   align-items: center;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 48px 1rem 30px;
+  padding: 48px 1rem 34px;
 }
 
-.intro-copy{
+.landing-copy{
   text-align: left;
 }
 
-.intro-kicker{
-  margin: 0 0 .55rem;
+.landing-kicker{
+  margin: 0 0 .6rem;
   color: var(--muted);
   font-size: .95rem;
   font-weight: 600;
   line-height: 1.35;
 }
 
-.intro-copy h1{
+.landing-copy h1{
   margin: 0 0 .75rem;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
   line-height: 1.08;
   letter-spacing: -.03em;
 }
 
-.intro-text{
+.landing-subtitle{
   max-width: 520px;
   margin: 0;
-  color: var(--muted);
-  font-size: 1.05rem;
+  color: var(--text);
+  font-size: 1.02rem;
   line-height: 1.55;
 }
 
-.intro-actions{
+.landing-actions{
   display: flex;
   gap: .6rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
 
-.intro-visual{
+.landing-image{
   display: flex;
   justify-content: flex-end;
 }
 
-.intro-visual img{
+.landing-image img{
   width: 100%;
   max-width: 560px;
   aspect-ratio: 4 / 3;
@@ -406,48 +407,49 @@ a.btn.ghost:visited {
 }
 
 @media (max-width: 760px){
-  .intro-split{
+  .landing-hero{
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 28px 1rem 20px;
   }
 
-  .intro-copy{
+  .landing-copy{
     text-align: center;
     order: 2;
   }
 
-  .intro-visual{
+  .landing-image{
     justify-content: center;
     order: 1;
   }
 
-  .intro-visual img{
+  .landing-image img{
     max-width: 92vw;
     aspect-ratio: 4 / 3;
     border-radius: 14px;
   }
 
-  .intro-kicker{
+  .landing-kicker{
     font-size: .82rem;
+    line-height: 1.35;
     max-width: 330px;
     margin: 0 auto .4rem;
   }
 
-  .intro-copy h1{
+  .landing-copy h1{
     font-size: 1.65rem;
     line-height: 1.15;
     margin-bottom: .45rem;
   }
 
-  .intro-text{
+  .landing-subtitle{
     font-size: .92rem;
     line-height: 1.45;
     max-width: 340px;
     margin: 0 auto;
   }
 
-  .intro-actions{
+  .landing-actions{
     justify-content: center;
     margin-top: .75rem;
   }
