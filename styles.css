@@ -369,10 +369,10 @@ a.btn.ghost:visited {
 }
 
 .landing-copy h1{
-  margin: 0 0 .75rem;
-  font-size: clamp(2.1rem, 4vw, 3.2rem);
-  line-height: 1.08;
-  letter-spacing: -.03em;
+  margin: 0 0 .65rem;
+  font-size: clamp(1.85rem, 3vw, 2.45rem) !important;
+  line-height: 1.1;
+  letter-spacing: -.02em;
 }
 
 .landing-subtitle{
@@ -459,11 +459,11 @@ a.btn.ghost:visited {
 /* FINAL FIX: split landing hero — higher-specificity override */
 main > section.landing-hero#top{
   display: grid !important;
-  grid-template-columns: minmax(280px, 0.85fr) minmax(360px, 1.15fr) !important;
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr) !important;
   gap: 2rem !important;
   align-items: center !important;
-  width: min(100%, 1120px) !important;
-  max-width: 1120px !important;
+  width: min(100%, 980px) !important;
+  max-width: 980px !important;
   margin: 0 auto !important;
   padding: 46px 1rem 32px !important;
   background: transparent !important;
