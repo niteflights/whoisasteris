@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=about-collage-1" />
+  <link rel="stylesheet" href="./styles.css?v=about-lightbox-1" />
   <link rel="stylesheet" href="./highlights/highlights.css" />
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
@@ -285,8 +285,10 @@
     
 <section id="about" class="section about">
   <div class="about-wrap">
-    <img class="about-photo about-collage" src="./assets/about-collage.jpg"
-         alt="Selected professional and aviation moments from Dr Asteris Apostolidis">
+    <button class="about-collage-button" type="button" onclick="openAboutLightbox()" aria-label="Open larger collage">
+      <img class="about-photo about-collage" src="./assets/about-collage.jpg"
+           alt="Selected professional and aviation moments from Dr Asteris Apostolidis">
+    </button>
     <div class="about-text">
       <h2>About me</h2>
       <p>I was born and raised in Thessaloniki, Greece, and over the last sixteen years I’ve lived in the UK, Belgium, France, and the Netherlands. Beyond aviation, I’m a lifelong photographer -darkroom to digital- drawn to landscapes, street scenes, aircraft, and the places I travel. Music is a constant companion; I’ve been collecting records and other physical formats for more than three decades. I now live in Amsterdam, where you’ll often find me building LEGO sets with my three children or exploring science exhibitions together.
@@ -310,6 +312,12 @@
   <footer class="site-footer">
     <p>© <span id="year"></span> Asteris Apostolidis. All rights reserved.</p>
   </footer>
+
+
+  <div id="about-lightbox" class="about-lightbox" hidden>
+    <button class="about-lightbox-close" type="button" onclick="closeAboutLightbox()" aria-label="Close larger collage">×</button>
+    <img src="./assets/about-collage.jpg" alt="Selected professional and aviation moments from Dr Asteris Apostolidis">
+  </div>
 
   <script src="./script.js"></script>
   <script src="./highlights/highlights.js"></script>
