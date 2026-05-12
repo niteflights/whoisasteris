@@ -662,11 +662,11 @@ main > section.landing-hero#top > .landing-image img {
 }
 /* Reduce gap between hero and My mission */
 main > section.landing-hero#top{
-  padding-bottom: 18px !important;   /* was around 32px */
+  padding-bottom: 12px !important;
 }
 
 #mission{
-  padding-top: 20px;                 /* was 34px via .section */
+  padding-top: 16px;
 }
 
 
