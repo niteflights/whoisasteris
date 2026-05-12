@@ -55,479 +55,66 @@ img { max-width: 100%; height: auto; }
 
 .site-footer{ padding:28px 1rem; text-align:center; color:var(--muted); border-top:1px solid var(--border); margin-top:1.4rem }
 
-/* Articles tile grid */
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 14px;
-}
-.tile {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-.tile:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0,0,0,.06);
-}
-.tile img {
-  width: 100%;
-  height: 160px;          /* adjust height to taste */
-  object-fit: cover;
-  display: block;
-  border-bottom: 1px solid var(--border);
-}
-.tile-body { padding: 12px; }
-.tile-body h3 { margin: 0 0 6px; font-size: 1.05rem; }
-.tile-body p { margin: 0 0 8px; color: var(--muted); }
-.tile-meta { color: var(--muted); font-size: .9rem; }
-
-/* Two columns + compact sizing */
-.tiles--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* exactly two */
-  gap: 10px;
-  max-width: 820px;          /* optional: keeps the row tidy */
-  margin: 0 auto;
-}
-@media (max-width: 680px) {
-  .tiles--two { grid-template-columns: 1fr; } /* one column on phones */
-}
-
-/* Smaller tile visuals */
-.tiles--compact .tile img {
-  height: 120px;             /* was 160px */
-  object-fit: cover;
-}
-.tiles--compact .tile img { height: 360px; }
-.tiles--compact .tile-body { padding: 10px; }
-.tiles--compact .tile-body h3 { font-size: 0.98rem; margin: 0 0 4px; }
-.tiles--compact .tile-body p  { font-size: 0.92rem; margin: 0 0 6px; }
-.tiles--compact .tile-meta    { font-size: 0.8rem; }
-
-/* About section */
-.about .about-wrap{
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 16px;
-  align-items: start;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.about .about-photo{
-  width: 160px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-}
-.about .about-text h2{
-  font-size: 1.4rem;
-  margin: 0 0 .6rem;
-}
-@media (min-width: 980px){
-  .about .about-wrap{ grid-template-columns: 200px 1fr; }
-  .about .about-photo{ width: 200px; }
-}
-@media (max-width: 640px){
-  .about .about-wrap{ grid-template-columns: 1fr; }
-  .about .about-photo{ width: 140px; margin: 0 auto; }
-  .about .about-text{ text-align: left; }
-}
-
-.tiles--three{
-  grid-template-columns: repeat(3, minmax(0,1fr)); /* exactly three */
-  gap: 12px;
-  max-width: 1100px;   /* optional, keeps the row tidy */
-  margin: 0 auto;
-}
-
-/* Focus card images */
-.card-media{
-  overflow: hidden;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  margin-bottom: .55rem;
-}
-.card-media img{
-  display: block;
-  width: 100%;
-  height: 160px;        /* adjust 140–200px to taste */
-  object-fit: cover;
-}
-
-/* If your grid doesn’t already define columns, keep this */
-.cards{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 12px;
-}
-
-@media (max-width: 900px){ .cards{ grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 600px){ .cards{ grid-template-columns: 1fr; } }
-
-@media (max-width: 900px){ .tiles--three{ grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 600px){ .tiles--three{ grid-template-columns: 1fr; } }
-
 @media (max-width:760px){ .nav-toggle{ display:inline-block; background:var(--panel); color:var(--text); border:1px solid var(--border); padding:.45rem .55rem; border-radius:8px } .nav-list{ display:none; position:absolute; right:1rem; top:56px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:.5rem; flex-direction:column } .nav.open .nav-list{ display:flex } .section{ padding:28px 1rem } }
 
-/* Make all links black with an underline */
-a,
-a:visited {
-  color: #111 !important;                 /* black */
-  text-decoration: underline;             /* keep underline */
-  text-underline-offset: 3px;
-}
-
-/* Slightly stronger hover underline (still black) */
-a:hover {
-  text-decoration-thickness: 2px;
-}
-
-/* Keep buttons looking like buttons (don’t turn those links black/underlined) */
-a.btn,
-a.btn:visited {
-  color: #fff !important;
-  text-decoration: none;
-}
-
-/* (Optional) Keep top-nav tidy: no underline until hover */
-.nav-list a { text-decoration: none; }
-.nav-list a:hover { text-decoration: underline; }
-
-/* Smooth transitions for Focus cards */
-.cards .card{
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
-}
-
-/* Hover/keyboard highlight */
-.cards .card:hover,
-.cards .card:focus-within{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,.08);
-  border-color: var(--accent, #111);
-  background: #fff; /* keep it minimal; tweak if you use a panel color */
-}
-
-/* Visible focus outline for accessibility (Tab key) */
-.cards .card:focus-visible{
-  outline: 2px solid var(--accent, #111);
-  outline-offset: 3px;
-}
-
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce){
-  .cards .card{ transition: none; }
-  .cards .card:hover{ transform: none; }
-}
-
-a.btn.ghost,
-a.btn.ghost:visited {
-  color: var(--accent) !important;
-  background: transparent;
-  border: 1px solid var(--accent);
-}
-
-/* Make the whole appointment tile behave like a clickable card */
-.item.appt{
-  position: relative;                 /* anchor overlay positioning */
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: .9rem;
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
-  cursor: pointer;
-}
-
-/* Hover & keyboard focus highlight */
-.item.appt:hover,
-.item.appt:focus-within{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,.08);
-  border-color: var(--accent, #111);
-  background: #fff;
-}
-
-/* Accessible focus ring when tabbing onto the tile */
-.item.appt:focus-visible{
-  outline: 2px solid var(--accent, #111);
-  outline-offset: 3px;
-}
-
-/* The ‘stretched’ link that covers the whole tile (but stays visually invisible) */
-.item.appt .stretched-link{
-  position: absolute;
-  inset: 0;                           /* cover entire tile */
-  z-index: 5;
-  text-decoration: none !important;   /* override global link underline */
-  color: inherit !important;
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce){
-  .item.appt{ transition: none; }
-  .item.appt:hover{ transform: none; }
-}
-/* Appointments: tighter spacing + distinct sizes */
-.item.appt{ 
-  line-height: 1.5;                /* was 1.65 globally */
-  padding: .8rem .85rem;           /* slightly tighter tile padding */
-}
-
-/* Headings inside each appointment */
-.item.appt h3{ 
-  margin: 0 0 .35rem; 
-  line-height: 1.35;               /* tighter line spacing */
-}
-
-/* 1st line = company (largest) */
-.item.appt h3:nth-of-type(1){
-  font-size: 1.08rem;
-  font-weight: 700;
-}
-
-/* 2nd line = role (a bit smaller) */
-.item.appt h3:nth-of-type(2){
-  font-size: 1.0rem;
-  font-weight: 600;
-}
-
-/* 3rd line = dates/location (smallest) */
-.item.appt h3:nth-of-type(3){
-  font-size: .95rem;
-  font-weight: 500;
-}
-.item.appt h3:nth-of-type(3) .muted{ color: var(--muted); }
-
-/* Bullet list: reduce gaps */
-.item.appt ul{
-  margin: .35rem 0 0;              /* smaller top margin */
-  padding-left: 1rem;
-}
-.item.appt li{ 
-  margin: .2rem 0;                 /* tighter between bullets */
-}
-/* Mobile hero typography: make name/subtitle more subtle */
-@media (max-width: 640px){
-  .hero{
-    padding: 30px 1rem 10px;
-  }
-
-  .hero h1{
-    font-size: 1.55rem;
-    line-height: 1.2;
-    margin: .45rem 0 .15rem;
-    font-weight: 700;
-    letter-spacing: 0;
-  }
-
-  .kicker{
-    font-size: .88rem;
-    line-height: 1.35;
-    font-weight: 500;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .cta-row{
-    margin-top: .55rem;
-    gap: .45rem;
-  }
-
-  .cta-row .btn{
-    padding: .5rem .7rem;
-    font-size: .9rem;
-  }
-}
-
-/* Split landing hero — isolated from old .hero styles */
-.landing-hero{
-  display: grid !important;
-  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
-  gap: 2rem;
-  align-items: center;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 48px 1rem 34px;
-}
-
-.landing-copy{
-  text-align: left;
-}
-
-.landing-kicker{
-  margin: 0 0 .6rem;
-  color: var(--muted);
-  font-size: .95rem;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.landing-copy h1{
-  margin: 0 0 .75rem;
-  font-size: clamp(2.1rem, 4vw, 3.2rem);
-  line-height: 1.08;
-  letter-spacing: -.03em;
-}
-
-.landing-subtitle{
-  max-width: 520px;
-  margin: 0;
-  color: var(--text);
-  font-size: 1.02rem;
-  line-height: 1.55;
-}
-
+/* More discreet hero buttons under logo */
 .landing-actions{
-  display: flex;
-  gap: .6rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.landing-image{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.landing-image img{
-  width: 100%;
-  max-width: 560px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 28px rgba(0,0,0,.06);
-}
-
-@media (max-width: 760px){
-  .landing-hero{
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 28px 1rem 20px;
-  }
-
-  .landing-copy{
-    text-align: center;
-    order: 2;
-  }
-
-  .landing-image{
-    justify-content: center;
-    order: 1;
-  }
-
-  .landing-image img{
-    max-width: 92vw;
-    aspect-ratio: 4 / 3;
-    border-radius: 14px;
-  }
-
-  .landing-kicker{
-    font-size: .82rem;
-    line-height: 1.35;
-    max-width: 330px;
-    margin: 0 auto .4rem;
-  }
-
-  .landing-copy h1{
-    font-size: 1.65rem;
-    line-height: 1.15;
-    margin-bottom: .45rem;
-  }
-
-  .landing-subtitle{
-    font-size: .92rem;
-    line-height: 1.45;
-    max-width: 340px;
-    margin: 0 auto;
-  }
-
-  .landing-actions{
-    justify-content: center;
-    margin-top: .75rem;
-  }
-}
-
-/* STRONG OVERRIDE: discreet hero buttons under logo */
-main > section.landing-hero#top .landing-actions{
-  display: flex !important;
   justify-content: flex-start !important;
-  align-items: center !important;
   gap: .45rem !important;
-  margin-top: .45rem !important;
-  flex-wrap: wrap !important;
+  margin-top: .55rem !important;
 }
 
-main > section.landing-hero#top .landing-actions a.btn,
-main > section.landing-hero#top .landing-actions a.btn:link,
-main > section.landing-hero#top .landing-actions a.btn:visited,
-main > section.landing-hero#top .landing-actions a.btn.ghost,
-main > section.landing-hero#top .landing-actions a.btn.ghost:link,
-main > section.landing-hero#top .landing-actions a.btn.ghost:visited{
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+.landing-actions .btn,
+.landing-actions .btn:visited,
+.landing-actions .btn.ghost,
+.landing-actions .btn.ghost:visited{
   background: transparent !important;
-  background-color: transparent !important;
   color: #111 !important;
-  border: 1px solid rgba(0,0,0,.24) !important;
+  border: 1px solid rgba(0,0,0,.22) !important;
   box-shadow: none !important;
-  padding: .32rem .58rem !important;
+  padding: .34rem .58rem !important;
   border-radius: 999px !important;
-  font-size: .74rem !important;
+  font-size: .76rem !important;
   font-weight: 500 !important;
-  line-height: 1.15 !important;
-  letter-spacing: .025em !important;
+  line-height: 1.2 !important;
+  letter-spacing: .02em !important;
   text-decoration: none !important;
 }
 
-main > section.landing-hero#top .landing-actions a.btn:hover,
-main > section.landing-hero#top .landing-actions a.btn.ghost:hover,
-main > section.landing-hero#top .landing-actions a.btn:focus-visible,
-main > section.landing-hero#top .landing-actions a.btn.ghost:focus-visible{
+.landing-actions .btn:hover,
+.landing-actions .btn.ghost:hover,
+.landing-actions .btn:focus-visible,
+.landing-actions .btn.ghost:focus-visible{
   background: #111 !important;
-  background-color: #111 !important;
   color: #fff !important;
   border-color: #111 !important;
   text-decoration: none !important;
 }
 
-/* Mobile version of the same discreet style */
+/* Override older mobile rule that made the primary button white-on-blue */
 @media (max-width: 820px){
-  main > section.landing-hero#top .landing-actions{
+  .landing-actions{
     justify-content: center !important;
-    gap: .4rem !important;
-    margin-top: .45rem !important;
+    margin-top: .5rem !important;
   }
 
-  main > section.landing-hero#top .landing-actions a.btn,
-  main > section.landing-hero#top .landing-actions a.btn:link,
-  main > section.landing-hero#top .landing-actions a.btn:visited,
-  main > section.landing-hero#top .landing-actions a.btn.ghost,
-  main > section.landing-hero#top .landing-actions a.btn.ghost:link,
-  main > section.landing-hero#top .landing-actions a.btn.ghost:visited{
+  .landing-actions .btn,
+  .landing-actions .btn:visited,
+  .landing-actions .btn.ghost,
+  .landing-actions .btn.ghost:visited{
     background: transparent !important;
-    background-color: transparent !important;
     color: #111 !important;
-    border: 1px solid rgba(0,0,0,.24) !important;
+    border: 1px solid rgba(0,0,0,.22) !important;
     box-shadow: none !important;
-    font-size: .70rem !important;
-    padding: .30rem .50rem !important;
+    font-size: .72rem !important;
+    padding: .32rem .52rem !important;
   }
 
-  main > section.landing-hero#top .landing-actions a.btn:hover,
-  main > section.landing-hero#top .landing-actions a.btn.ghost:hover,
-  main > section.landing-hero#top .landing-actions a.btn:focus-visible,
-  main > section.landing-hero#top .landing-actions a.btn.ghost:focus-visible{
+  .landing-actions .btn:hover,
+  .landing-actions .btn.ghost:hover,
+  .landing-actions .btn:focus-visible,
+  .landing-actions .btn.ghost:focus-visible{
     background: #111 !important;
-    background-color: #111 !important;
     color: #fff !important;
     border-color: #111 !important;
   }
