@@ -18,7 +18,7 @@
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0b57b74e24954432addccdb745a96f67"}'></script>
   <!-- End Cloudflare Web Analytics -->
-  <link rel="stylesheet" href="./styles.css?v=mobile-button-fix-1" />
+  <link rel="stylesheet" href="./styles.css?v=logo-update-1" />
   <link rel="stylesheet" href="./highlights/highlights.css" />
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
@@ -30,7 +30,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">AA</a>
+    <a class="brand brand-logo" href="#top" aria-label="Dr Asteris Apostolidis home"><img src="./assets/logo-aa.png" alt=""></a>
     <nav id="nav" class="nav">
       <button class="nav-toggle" aria-label="Toggle Menu" aria-expanded="false" onclick="toggleNav()">☰</button>
       <ul class="nav-list">
@@ -64,7 +64,12 @@
   <div class="landing-copy">
     <p class="landing-kicker">Research &amp; Innovation • Aviation • Aerospace</p>
 
-    <h1>Dr Asteris Apostolidis</h1>
+    <h1 class="visually-hidden">Dr Asteris Apostolidis</h1>
+
+    <picture class="hero-wordmark">
+      <source media="(max-width: 640px)" srcset="./assets/logo-wordmark-stacked.png">
+      <img src="./assets/logo-wordmark-horizontal.png" alt="Dr Asteris Apostolidis">
+    </picture>
 
 <!--    <p class="landing-subtitle">
       I work at the intersection of aviation, emerging technologies, trustworthy AI,
