@@ -753,3 +753,12 @@ main > section.landing-hero#top{
   }
 }
 
+
+/* Mobile readability: keep primary landing button text white */
+@media (max-width: 820px){
+  .landing-actions .btn:not(.ghost),
+  .landing-actions .btn:not(.ghost):visited{
+    color: #fff !important;
+  }
+}
+
