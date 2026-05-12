@@ -662,94 +662,9 @@ main > section.landing-hero#top > .landing-image img {
 }
 /* Reduce gap between hero and My mission */
 main > section.landing-hero#top{
-  padding-bottom: 12px !important;
+  padding-bottom: 18px !important;   /* was around 32px */
 }
 
 #mission{
-  padding-top: 16px;
+  padding-top: 20px;                 /* was 34px via .section */
 }
-
-
-/* Clickable About collage + lightbox */
-.about-collage-button{
-  display: block;
-  width: 100%;
-  max-width: 460px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: zoom-in;
-  text-align: inherit;
-}
-
-.about-collage-button:hover .about-collage,
-.about-collage-button:focus-visible .about-collage{
-  transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(0,0,0,.10);
-}
-
-.about-collage-button:focus-visible{
-  outline: 2px solid var(--accent, #111);
-  outline-offset: 4px;
-  border-radius: 14px;
-}
-
-.about .about-photo.about-collage{
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-.about-lightbox{
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-  background: rgba(0,0,0,.82);
-}
-
-.about-lightbox[hidden]{
-  display: none;
-}
-
-.about-lightbox img{
-  width: min(96vw, 1400px);
-  height: auto;
-  max-height: 90vh;
-  object-fit: contain;
-  border-radius: 14px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.35);
-}
-
-.about-lightbox-close{
-  position: fixed;
-  top: 18px;
-  right: 22px;
-  z-index: 10000;
-  width: 42px;
-  height: 42px;
-  border: 0;
-  border-radius: 999px;
-  background: #fff;
-  color: #111;
-  font-size: 28px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-@media (max-width: 760px){
-  .about-collage-button{
-    max-width: 92vw;
-    margin: 0 auto;
-  }
-
-  .about-lightbox{
-    padding: 14px;
-  }
-
-  .about-lightbox img{
-    width: 96vw;
-    max-height: 86vh;
-  }
-}
-
