@@ -1,0 +1,11 @@
+/* Cards shared by News (LinkedIn) + Videos (YouTube) */
+.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.media-card{border:1px solid var(--border,rgba(0,0,0,.08));border-radius:12px;background:#fff;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.media-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.media-media{border-bottom:1px solid var(--border,rgba(0,0,0,.08))}
+.media-media iframe,.media-media img,.media-media video{width:100%;height:auto;display:block}
+.media-body{padding:12px}
+.media-title{margin:.2rem 0 .2rem;font-size:1.05rem}
+.media-desc{margin:0;color:var(--muted,#6b7280);font-size:.95rem}
+.media-embed{width:100%;aspect-ratio:16/9;border:0}
+@media (max-width:480px){.media-embed{aspect-ratio:auto;height:280px}}
