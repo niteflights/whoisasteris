@@ -779,3 +779,20 @@ main > section.landing-hero#top .landing-actions{
     margin-right: auto !important;
   }
 }
+/* Tighter hero spacing */
+.hero-logo,
+.hero-wordmark{
+  margin-bottom: .1rem !important;
+}
+
+main > section.landing-hero#top .landing-actions{
+  margin-top: -.15rem !important;
+}
+
+main > section.landing-hero#top{
+  padding-bottom: 0 !important;
+}
+
+#mission{
+  padding-top: 6px !important;
+}
