@@ -1,0 +1,26 @@
+Tidied website bundle
+======================
+
+Removed unused/superseded files:
+- README.txt
+- assets/about.jpg
+- assets/career-collage.jpg
+- assets/headshot.jpg
+- assets/logo-aa-framed.png
+- assets/logo-aa-simple.png
+- assets/logo-wordmark-horizontal.png
+- assets/logos2.jpg
+- assets/focus/test.txt
+- cv/CV_Asteris_Apostolidis_Feb26_long_website.pdf
+- cv/CV_Asteris_Apostolidis_May25_long_website.pdf
+- cv/CV_Asteris_Apostolidis_Oct25_long_website.pdf
+- photos/
+
+Other changes:
+- Removed references to missing ./highlights/highlights.css and ./highlights/highlights.js.
+- Fixed webmanifest path to ./assets/site.webmanifest.
+- Updated og:image to the current hero photo.
+- Removed the unused preload of assets/headshot.jpg.
+- Removed obsolete commented-out HTML blocks from index.html.
+- Removed unused gallery-loading code from script.js because there is no active #gallery section.
+- Left the visible layout and current CSS behaviour intact.
