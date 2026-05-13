@@ -17,7 +17,7 @@
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0b57b74e24954432addccdb745a96f67"}'></script>
   <!-- End Cloudflare Web Analytics -->
-  <link rel="stylesheet" href="./styles.css?v=tidy-1" />
+  <link rel="stylesheet" href="./styles.css?v=collapsible-sections-1" />
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
@@ -78,9 +78,10 @@
       <img src="./assets/logos2bw.jpg" alt="Selected organisations and partners" loading="lazy" decoding="async">
     </section>
     
-<section id="projects" class="section">
-      <h2>Focus Areas</h2>
-      <div class="cards">
+<section id="projects" class="section collapsible-section">
+  <details open>
+    <summary><h2>Focus Areas</h2></summary>
+<div class="cards">
         
         <article class="card">
           <div class="card-media">
@@ -107,17 +108,21 @@
         </article>
         
       </div>
-    </section>
+  </details>
+</section>
 
     <!-- News (LinkedIn) -->
-    <section id="news" class="section">
-      <h2>News</h2>
-      <div id="news-grid" class="media-grid" aria-live="polite"></div>
-    </section>
+    <section id="news" class="section collapsible-section">
+  <details open>
+    <summary><h2>News</h2></summary>
+<div id="news-grid" class="media-grid" aria-live="polite"></div>
+  </details>
+</section>
     
-    <section id="experience" class="section section-divided">
-      <h2>Current Professional Appointments</h2>
-      <div class="timeline">
+    <section id="experience" class="section section-divided collapsible-section">
+  <details open>
+    <summary><h2>Current Professional Appointments</h2></summary>
+<div class="timeline">
         
     <div class="item appt">
       <h3>KLM Royal Dutch Airlines</h3>
@@ -159,17 +164,20 @@
     </div>        
         <p><a href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf" target="_blank" rel="noopener">See full employment list in my CV →</a></p>        
       </div>
-    </section>
+  </details>
+</section>
     
-    <section id="education" class="section section-divided">
-      <h2>Education</h2>
-      <ul class="list">
+    <section id="education" class="section section-divided collapsible-section">
+  <details open>
+    <summary><h2>Education</h2></summary>
+<ul class="list">
         <li>PhD, Turbine Cooling and Heat Transfer Modelling for Gas Turbine Performance Simulation — Cranfield University (2014).</li>
         <li>MSc (Cum Laude), Thermal Power — Aerospace Propulsion — Cranfield University (2010).</li>
         <li>Dipl. Eng., Mechanical Engineering (Energy & Aeronautics) — Aristotle University of Thessaloniki (2009).</li>
         <p><a href="https://dspace.lib.cranfield.ac.uk/items/60955c90-1751-4adb-8e3b-9d91835a08e2" target="_blank" rel="noopener">PhD Thesis Repository →</a></p>
       </ul>
-    </section>
+  </details>
+</section>
     
     <section id="programmes" class="section">
       <h2>Industrial & Academic Research Programmes</h2>
@@ -214,9 +222,10 @@
       </ul>
     </section>
 
-<section id="articles" class="section section-divided">
-  <h2>Selected Articles</h2>
-   <div class="tiles tiles--three tiles--compact">
+<section id="articles" class="section section-divided collapsible-section">
+  <details>
+    <summary><h2>Selected Articles</h2></summary>
+<div class="tiles tiles--three tiles--compact">
     <a class="tile" href="https://aerospaceamerica.aiaa.org/departments/decarbonizing-by-2050-optimists-pessimists-and-realists/" target="_blank" rel="noopener">
       <img src="./assets/articles/AA.jpg" alt="Decarbonizing by 2050 — Aerospace America">
       <div class="tile-body">
@@ -241,13 +250,16 @@
       </div>
     </a>
   </div>
+  </details>
 </section>
 
 <!-- Videos (YouTube) -->
-    <section id="videos" class="section section-divided">
-      <h2>Videos</h2>
-      <div id="videos-grid" class="media-grid" aria-live="polite"></div>
-    </section>
+    <section id="videos" class="section section-divided collapsible-section">
+  <details>
+    <summary><h2>Videos</h2></summary>
+<div id="videos-grid" class="media-grid" aria-live="polite"></div>
+  </details>
+</section>
     
 <section id="about" class="section about section-divided">
   <div class="about-wrap">

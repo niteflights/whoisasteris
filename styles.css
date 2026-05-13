@@ -812,3 +812,51 @@ main > section.landing-hero#top .landing-actions{
   background: rgba(0,0,0,.18);
   margin: 0 0 28px;
 }
+
+/* Collapsible sections */
+.collapsible-section details{
+  border: 0;
+}
+
+.collapsible-section summary{
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  user-select: none;
+}
+
+.collapsible-section summary::-webkit-details-marker{
+  display: none;
+}
+
+.collapsible-section summary h2{
+  margin: 0;
+}
+
+.collapsible-section summary::after{
+  content: "⌄";
+  flex: 0 0 auto;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #111;
+  transition: transform .18s ease;
+}
+
+.collapsible-section details[open] summary::after{
+  transform: rotate(180deg);
+}
+
+.collapsible-section details > :not(summary){
+  margin-top: 1rem;
+}
+
+.collapsible-section details:not([open]){
+  padding-bottom: 0;
+}
+
+.section-divided.collapsible-section::before{
+  margin-bottom: 22px;
+}
