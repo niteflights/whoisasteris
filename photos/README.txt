@@ -1,1 +1,0 @@
-Add .jpg/.png images here and list them in photos.json (see example).
