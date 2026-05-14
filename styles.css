@@ -860,17 +860,19 @@ main > section.landing-hero#top .landing-actions{
 .section-divided.collapsible-section::before{
   margin-bottom: 22px;
 }
-/* Mobile only: reduce gap between hero photo and logo/name */
+/* Mobile only: reduce hero gap without overlapping the photo */
 @media (max-width: 820px){
   main > section.landing-hero#top{
-    gap: .25rem !important;
+    gap: .6rem !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
   }
 
   main > section.landing-hero#top > .landing-image{
-    margin-bottom: -1.4rem !important;
+    margin-bottom: 0 !important;
   }
 
   main > section.landing-hero#top > .landing-copy{
-    margin-top: 0 !important;
+    margin-top: -1.2rem !important;
   }
 }
