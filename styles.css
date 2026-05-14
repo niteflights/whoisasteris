@@ -812,6 +812,22 @@ main > section.landing-hero#top .landing-actions{
   background: rgba(0,0,0,.18);
   margin: 0 0 28px;
 }
+/* MOBILE HERO GAP REVERT: restore original spacing between photo and logo/name */
+@media (max-width: 820px){
+  main > section.landing-hero#top{
+    gap: 1rem !important;
+    padding-top: 28px !important;
+    padding-bottom: 20px !important;
+  }
+
+  main > section.landing-hero#top > .landing-image{
+    margin-bottom: 0 !important;
+  }
+
+  main > section.landing-hero#top > .landing-copy{
+    margin-top: 0 !important;
+  }
+}
 
 /* Collapsible sections */
 .collapsible-section details{
@@ -860,19 +876,17 @@ main > section.landing-hero#top .landing-actions{
 .section-divided.collapsible-section::before{
   margin-bottom: 22px;
 }
-/* MOBILE HERO GAP REVERT: restore original spacing between photo and logo/name */
-@media (max-width: 820px){
-  main > section.landing-hero#top{
-    gap: 1rem !important;
-    padding-top: 28px !important;
-    padding-bottom: 20px !important;
-  }
 
-  main > section.landing-hero#top > .landing-image{
-    margin-bottom: 0 !important;
-  }
+/* Media grid inside collapsible sections: keep News and Videos horizontal */
+.collapsible-section .media-grid{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 14px !important;
+  align-items: start !important;
+}
 
-  main > section.landing-hero#top > .landing-copy{
-    margin-top: 0 !important;
+@media (max-width: 700px){
+  .collapsible-section .media-grid{
+    grid-template-columns: 1fr !important;
   }
 }
