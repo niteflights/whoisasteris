@@ -10,22 +10,20 @@
   <meta property="og:description" content="Strategy and systems for predictive maintenance, trustworthy AI, and digital twins." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://whoisasteris.com" />
-  <meta property="og:image" content="./assets/headshot.jpg" />
-  <link rel="preload" as="image" href="./assets/headshot.jpg">
+  <meta property="og:image" content="https://whoisasteris.com/assets/Asteris_WAF.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0b57b74e24954432addccdb745a96f67"}'></script>
   <!-- End Cloudflare Web Analytics -->
-  <link rel="stylesheet" href="./styles.css?v=logo-update-1" />
-  <link rel="stylesheet" href="./highlights/highlights.css" />
+  <link rel="stylesheet" href="./styles.css?v=lean-links-1" />
+  <link rel="stylesheet" href="./media/media-sections.css">
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest"> <!-- optional -->
-  <link rel="stylesheet" href="./media/media-sections.css">
+  <link rel="manifest" href="./assets/site.webmanifest">
   <meta name="theme-color" content="#111111">
 </head>
 <body>
@@ -35,48 +33,30 @@
       <button class="nav-toggle" aria-label="Toggle Menu" aria-expanded="false" onclick="toggleNav()">☰</button>
       <ul class="nav-list">
         <li><a href="#mission">Mission</a></li>
+        <li><a href="#selected-projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Research</a></li>
         <li><a href="#talks">Talks</a></li>
         <li><a href="#articles">Media</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#contact">Contact</a></li>
-<!--        <li><button id="themeBtn" class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button></li> -->
-      </ul>
+</ul>
     </nav>
   </header>
 
   <main id="page-top">
-<!--    <section class="hero">
-      <div class="hero-inner">
-        <img class="headshot" src="./assets/career-collage.jpg" alt="Portraits of Dr Asteris Apostolidis" />
-        <h1>Dr Asteris Apostolidis</h1>
-        <p class="kicker">Research &amp; Innovation • Aviation &amp; Aerospace • Tech &amp; AI</p>
-        <div class="cta-row">
-          <a class="btn" href="#projects">See focus areas</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/asterisapostolidis/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn ghost" href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf">Download CV</a>
-        </div>
-      </div>
-    </section> -->
-
 <section class="landing-hero" id="top">
   <div class="landing-copy">
-    <p class="landing-kicker">Research &amp; Innovation • Aviation • Aerospace</p>
+    <p class="visually-hidden">Research &amp; Innovation • Aviation • Aerospace</p>
 
     <h1 class="visually-hidden">Dr Asteris Apostolidis</h1>
 
     <picture class="hero-wordmark">
       <source media="(max-width: 640px)" srcset="./assets/logo-wordmark-stacked.png">
-      <img src="./assets/logo-wordmark-horizontal.png" alt="Dr Asteris Apostolidis">
+      <img src="./assets/logo-wordmark-stacked.png" alt="Dr Asteris Apostolidis">
     </picture>
 
-<!--    <p class="landing-subtitle">
-      I work at the intersection of aviation, emerging technologies, trustworthy AI,
-      simulation, and data-driven maintenance.
-    </p> -->
-
-    <div class="landing-actions">
+<div class="landing-actions">
       <a class="btn" href="#mission">My mission</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/asterisapostolidis/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn ghost" href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf">Download CV</a>
@@ -93,63 +73,77 @@
       <p>
         I’m a technologist working across physical and digital engineering. My work sits at the intersection of aviation, technology, strategy, and sustainability. I bring technical, managerial, and research expertise from airlines, academia, and aerospace manufacturers, and I’ve led projects spanning aircraft system design, simulation, operations, and maintenance—as well as modelling of aviation processes. I serve on EASA’s <a href="https://www.easa.europa.eu/en/document-library/terms-of-reference-and-rulemaking-group-compositions/tor-rmt0742" target="_blank" rel="noopener">Rulemaking Committee on Trustworthy AI (RMT.0742)</a> and lead the Diagnostics & Prognostics Working Group of the <a href="https://www.dataforaviation.org" target="_blank" rel="noopener">Independent Data Consortium for Aviation (IDCA)</a>, alongside roles on technical advisory boards, editorial boards, international working groups, and academia as a visiting scholar.
       </p>
-<!--        <li><b>Focus: Simulation & Digital Twins, Diagnostics & Prognostics, Autonomy, Trustworthy AI for Safety-critical Systems.</b></li>
-        <li><b>Current roles: Senior Lead Technical Innovation (KLM Royal Dutch Airlines); Senior Researcher, ex-Associate Professor (AUAS).</b></li> -->
-    </section>
+</section>
 
     <section class="section">
       <img src="./assets/logos2bw.jpg" alt="Selected organisations and partners" loading="lazy" decoding="async">
     </section>
     
-<!--    <section id="projects" class="section">
-      <h2>Focus Areas</h2>
-      <div class="cards">
-        <article class="card"><h3>Simulation & Digital Twins</h3><p>From asset models to airport/airline operations simulation for decision support and scenario testing.</p></article>
-        <article class="card"><h3>Trustworthy AI</h3><p>Methods and governance for explainability, verification/ validation, and safety in aviation AI applications.</p></article>
-        <article class="card"><h3>Predictive Maintenance & CBM</h3><p>End-to-end pipelines for monitoring, RUL estimation, and workscoping that reduce downtime.</p></article>
-      </div>
-    </section> -->
+<section id="selected-projects" class="section collapsible-section selected-projects">
+  <details open>
+    <summary><h2>Selected Projects</h2></summary>
 
-    <section id="projects" class="section">
-      <h2>Focus Areas</h2>
-      <div class="cards">
-        
-        <article class="card">
-          <div class="card-media">
-            <img src="./assets/focus/Focus1.jpg" alt="Digital twins and simulation" loading="lazy" decoding="async">
-          </div>
-          <h3>Simulation & Digital Twins</h3>
-          <p>Simulation of airline operations for decision support, Computational engineering methods.</p>
-        </article>
+    <div class="project-stack">
+      <article class="project-panel">
+        <img src="./assets/projects/fleetlab.jpg" alt="Aircraft fleet and network planning concept" loading="lazy" decoding="async">
+        <div class="project-panel-content">
+          <span class="project-kicker">KLM FleetLab</span>
+          <h3>Integrated Fleet Decision Support</h3>
+          <p>Simulation-led decision support for future fleet choices across maintenance, operations, and network planning.</p>
+        </div>
+      </article>
+      
+      <article class="project-panel">
+        <img src="./assets/projects/turnaround-digital-twin.jpg" alt="Aircraft turnaround and airport ground operations" loading="lazy" decoding="async">
+        <div class="project-panel-content">
+          <span class="project-kicker">KLM BlueLabs</span>
+          <h3>Digital Twin for Airline Operations</h3>
+          <p>Simulation and operational intelligence for more predictable aircraft turnaround performance.</p>
+        </div>
+      </article>
+      
+      <article class="project-panel">
+        <img src="./assets/projects/trustworthy-ai.jpg" alt="Abstract trustworthy artificial intelligence and aviation certification concept" loading="lazy" decoding="async">
+        <div class="project-panel-content">
+          <span class="project-kicker">European Union Aviation Safety Agency (EASA)</span>
+          <h3>Trustworthy AI for Aviation</h3>
+          <p>Contributing to the regulatory and technical foundations for safe, explainable, and certifiable AI in aviation.</p>
+        </div>
+      </article>
+      
+      <article class="project-panel">
+        <img src="./assets/projects/predictive-maintenance.jpg" alt="Aircraft maintenance and predictive maintenance technology" loading="lazy" decoding="async">
+        <div class="project-panel-content">
+          <span class="project-kicker">KLM Engineering &amp; Maintenance</span>
+          <h3>Predictive Maintenance &amp; Prognostics</h3>
+          <p>Using data-driven diagnostics and prognostics to reduce disruption, waste, and unnecessary maintenance.</p>
+        </div>
+      </article>
+      
+      <article class="project-panel">
+        <img src="./assets/projects/leap-aerothermal-modelling.jpg" alt="Aero engine turbine and aerothermal modelling concept" loading="lazy" decoding="async">
+        <div class="project-panel-content">
+          <span class="project-kicker">Airbus | Safran Aircraft Engines</span>
+          <h3>Aerothermal Modelling of the CFM LEAP-1A Engine</h3>
+          <p>Physics-based modelling of turbine cooling and heat transfer for next-generation aircraft propulsion.</p>
+        </div>
+      </article>
+    </div>
+  </details>
+</section>
 
-        <article class="card">
-          <div class="card-media">
-            <img src="./assets/focus/Focus2.jpg" alt="Trustworthy AI" loading="lazy" decoding="async">
-          </div>
-          <h3>Trustworthy AI</h3>
-          <p>Explainability, V&V, and Data Management for safe and certifiable applications in aviation.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-media">
-            <img src="./assets/focus/Focus3.jpg" alt="Condition-based maintenance" loading="lazy" decoding="async">
-          </div>
-          <h3>Predictive Maintenance</h3>
-          <p>Diagnostics & Prognostics, Workscoping, RUL estimation for reduction of disruptions and waste.</p>
-        </article>
-        
-      </div>
-    </section>
-
-    <!-- News (LinkedIn) -->
-    <section id="news" class="section">
-      <h2>News</h2>
-      <div id="news-grid" class="media-grid" aria-live="polite"></div>
-    </section>
+<!-- News (LinkedIn) -->
+    <section id="news" class="section collapsible-section">
+  <details open>
+    <summary><h2>News</h2></summary>
+<div id="news-grid" class="media-grid" aria-live="polite"></div>
+  </details>
+</section>
     
-    <section id="experience" class="section section-divided">
-      <h2>Current Professional Appointments</h2>
-      <div class="timeline">
+    <section id="experience" class="section section-divided collapsible-section">
+  <details open>
+    <summary><h2>Current Professional Appointments</h2></summary>
+<div class="timeline">
         
     <div class="item appt">
       <h3>KLM Royal Dutch Airlines</h3>
@@ -159,9 +153,7 @@
         <li>I lead the Fleet and Emerging Technologies Labs within KLM, exploring the applicability of future technologies.</li>
         <li>I focus on Simulation &amp; Digital Twins, Optimisation, Data Exchange, Trustworthy AI, and Autonomy for Operations.</li>
       </ul>
-
-  <!-- NEW: the whole tile becomes clickable -->
-      <a class="stretched-link"
+<a class="stretched-link"
          href="https://techdata.klm.com/en/our-work/blue-labs/"
          aria-label="KLM Royal Dutch Airlines — Senior Lead, Technical Innovation & Emerging Technologies"></a>
     </div>
@@ -174,93 +166,100 @@
         <li>I lead industrial research with partners like Air France-KLM, the Royal Dutch Airforce, MTU Aero Engines.</li>
         <li>I co-developed Bright Sky (RVO R&amp;D Mobility Fund) and contributed to faculty strategy.</li>
       </ul>
-
-  <!-- makes the whole tile clickable -->
-      <a class="stretched-link"
+<a class="stretched-link"
          href="https://research.hva.nl/en/persons/asteris-apostolidis"
          aria-label="Amsterdam University of Applied Sciences — Senior Research Associate; ex-Associate Professor & Lab Lead"></a>
     </div>
 
     <div class="item appt">
       <h3>EASA — European Union Aviation Safety Agency</h3>
-      <h3>Independent Expert in New &amp; Emerging Technologies; Rulemaking Committee Member</h3>
+      <h3>Independent Expert in New &amp; Emerging Technologies; Rulemaking Task Member</h3>
       <h3><span class="muted">(09/2024–present, Cologne, Germany)</span></h3>
       <ul>
         <li>I provide technical expertise in several areas around new and emerging technologies in aviation.</li>
         <li>I participate in the Rulemaking Task RMT.0742, overseeing the regulatory framework for AI in aviation.</li>
       </ul>
-
-  <!-- makes the whole tile clickable -->
-      <a class="stretched-link"
+<a class="stretched-link"
          href="https://www.easa.europa.eu/en/document-library/terms-of-reference-and-rulemaking-group-compositions/tor-rmt0742"
          aria-label="EASA — Independent Expert in New & Emerging Technologies; Rulemaking Committee Member"></a>
     </div>        
-        <p><a href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf" target="_blank" rel="noopener">See full employment list in my CV →</a></p>        
       </div>
-    </section>
+  </details>
+</section>
     
-    <section id="education" class="section section-divided">
-      <h2>Education</h2>
-      <ul class="list">
+    <section id="education" class="section section-divided collapsible-section">
+  <details open>
+    <summary><h2>Education</h2></summary>
+<ul class="list">
         <li>PhD, Turbine Cooling and Heat Transfer Modelling for Gas Turbine Performance Simulation — Cranfield University (2014).</li>
-        <li>MSc (Cum Laude), Thermal Power — Aerospace Propulsion — Cranfield University (2010).</li>
+        <li>MSc (Distinction), Thermal Power — Aerospace Propulsion — Cranfield University (2010).</li>
         <li>Dipl. Eng., Mechanical Engineering (Energy & Aeronautics) — Aristotle University of Thessaloniki (2009).</li>
         <p><a href="https://dspace.lib.cranfield.ac.uk/items/60955c90-1751-4adb-8e3b-9d91835a08e2" target="_blank" rel="noopener">PhD Thesis Repository →</a></p>
       </ul>
-    </section>
+  </details>
+</section>
     
-    <section id="programmes" class="section">
-      <h2>Industrial & Academic Research Programmes</h2>
-      <ul class="list">
+    <section id="programmes" class="section collapsible-section">
+      
+  <details open>
+    <summary><h2>Industrial & Academic Research Programmes</h2></summary>
+<ul class="list">
         <li>Bright Sky — Innovations in Predictive Maintenance, MRO, Security, Training (RVO R&D Mobility Fund, 2021-2025).</li>
         <li>CIMPLO — Cross-industry Predictive Maintenance & Dynamic scheduling platform (NWO Smart Industry, 2017-2022).</li>
         <li>Data Mining in MRO — Data Analytics & Predictive Maintenance in aviation MRO (NWO / SIA RAAK MKB, 2016-2019).</li>
-        <p><a href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf" target="_blank" rel="noopener">See the full details in my CV →</a></p>
       </ul>
-    </section>
+  </details>
+</section>
 
-    <section id="publications" class="section">
-      <h2>Selected Publications</h2>
-      <p>Peer-reviewed papers, conference proceedings and book chapters on predictive maintenance, diagnostics & prognostics, trustworthy AI, and gas turbine modelling.</p>
+    <section id="publications" class="section collapsible-section">
+      
+  <details open>
+    <summary><h2>Selected Publications</h2></summary>
+<p>Peer-reviewed papers, conference proceedings and book chapters on predictive maintenance, diagnostics & prognostics, trustworthy AI, and gas turbine modelling.</p>
       <ul class="list">
         <li>"Electric Aircraft Operations: An Interisland Mobility Case Study" <em>Aerospace</em> (2024).</li>
         <li>“AI-Based Exhaust Gas Temperature Prediction for Trustworthy Safety-Critical Applications”, <em>Aerospace</em> (2022).</li>
         <li>“Aviation Data Analytics in MRO Operations: Prospects and Pitfalls” <em>IEEE RAMS</em> (2020).</li>
         <p><a href="https://scholar.google.com/citations?user=Ocz8SvgAAAAJ&hl=en" target="_blank" rel="noopener">See the full list in Google Scholar →</a></p>
       </ul>
-    </section>
+  </details>
+</section>
 
-    <section id="talks" class="section">
-      <h2>Selected Invited Talks</h2>
-      <ul class="list">
-        <li>Invited Panel: “The continuum of compute”, Annual Quantum Global 2026, The Economist, London, UK (2026).</li>
+    <section id="talks" class="section collapsible-section">
+      
+  <details open>
+    <summary><h2>Selected Invited Talks</h2></summary>
+<ul class="list">
+        <li>Invited Panelist: “The continuum of compute”, Annual Quantum Global 2026, The Economist, London, UK (2026).</li>
         <li>Invited Talk: “Innovation Beyond AI: What is Next”, EUROCONTROL Innovation Hub, Paris, France (2025).</li>
         <li>Keynote: “Revolutionising aerospace with trustworthy AI”, Aviation New Technology Forum, Guangzhou, China (2025).</li>
         <li>Invited Talk: "Towards Net-Zero Aviation with AI”, Georgia Institute of Technology, Atlanta, USA (2024).</li>
-        <li>Invited Lecture, “AI for Aviation MRO”, Responsible AI Series, IET/The Alan Turing Institute, UK (2022).</li>
-        <p><a href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf" target="_blank" rel="noopener">See the full list in my CV →</a></p>
+        <li>Invited Lecture: “AI for Aviation MRO”, Responsible AI Series, The Alan Turing Institute, UK (2022).</li>
       </ul>
-    </section>
+  </details>
+</section>
 
-    <section id="awards" class="section">
-      <h2>Selected Awards & Distinctions</h2>
-      <ul class="list">
+    <section id="awards" class="section collapsible-section">
+      
+  <details open>
+    <summary><h2>Selected Awards & Distinctions</h2></summary>
+<ul class="list">
         <li>Scholarships and sponsorships from Cranfield University, Rolls-Royce plc and the German Aerospace Center (DLR).</li>
         <li>Supervision for the Best Thesis award — NLF National Aerospace Funds (2022).</li>
         <li>Outstanding Contribution in Reviewing — Elsevier (2019).</li>
-        <p><a href="./cv/CV_Asteris_Apostolidis_May26_long_website.pdf" target="_blank" rel="noopener">See the full list in my CV →</a></p>
       </ul>
-    </section>
+  </details>
+</section>
 
-<section id="articles" class="section section-divided">
-  <h2>Selected Articles</h2>
-   <div class="tiles tiles--three tiles--compact">
+<section id="articles" class="section section-divided collapsible-section">
+  <details>
+    <summary><h2>Selected Articles</h2></summary>
+<div class="tiles tiles--three tiles--compact">
     <a class="tile" href="https://aerospaceamerica.aiaa.org/departments/decarbonizing-by-2050-optimists-pessimists-and-realists/" target="_blank" rel="noopener">
       <img src="./assets/articles/AA.jpg" alt="Decarbonizing by 2050 — Aerospace America">
       <div class="tile-body">
         <h3>Decarbonizing by 2050: Optimists, Pessimists & Realists</h3>
-<!--         <p>My perspective on aviation’s sustainability pathways in Aerospace America.</p> -->
-        <span class="tile-meta">Aerospace America</span> 
+<span class="tile-meta">Aerospace America</span> 
       </div>
     </a>
 
@@ -268,8 +267,7 @@
       <img src="./assets/articles/SIF.jpg" alt="Towards Sustainable Air Travel">
       <div class="tile-body">
         <h3>Towards Sustainable Air Travel: Challenges and Opportunities</h3>
- <!--         <p>My perspective on sustainable air travel for the Solar Impulse Foundation.</p> -->
-        <span class="tile-meta">Solar Impulse Foundation</span> 
+<span class="tile-meta">Solar Impulse Foundation</span> 
       </div>
     </a>
 
@@ -277,19 +275,20 @@
       <img src="./assets/articles/B21.jpg" alt="Towards Sustainable Air Travel">
       <div class="tile-body">
         <h3>B-21: Why civilian designers are intrigued by blended-wing-bodies too</h3>
- <!--         <p>Some deisign considerations for the upcoming B-21 bomber.</p> -->
-        <span class="tile-meta">Aerospace America</span> 
+<span class="tile-meta">Aerospace America</span> 
       </div>
     </a>
   </div>
+  </details>
 </section>
 
-
 <!-- Videos (YouTube) -->
-    <section id="videos" class="section">
-      <h2>Videos</h2>
-      <div id="videos-grid" class="media-grid" aria-live="polite"></div>
-    </section>
+    <section id="videos" class="section section-divided collapsible-section">
+  <details>
+    <summary><h2>Videos</h2></summary>
+<div id="videos-grid" class="media-grid" aria-live="polite"></div>
+  </details>
+</section>
     
 <section id="about" class="section about section-divided">
   <div class="about-wrap">
@@ -299,21 +298,25 @@
     </button>
     <div class="about-text">
       <h2>About me</h2>
-      <p>I was born and raised in Thessaloniki, Greece, and over the last seventeen years I’ve lived in the UK, Belgium, France, and the Netherlands. Beyond aviation, I’m a lifelong photographer -darkroom to digital- drawn to landscapes, street scenes, aircraft, and the places I travel. Music is a constant companion; I’ve been collecting records and other physical formats for more than three decades. I now live in Amsterdam, where you’ll often find me building LEGO sets with my three children or exploring science exhibitions together.
+      <p>I was born and raised in Thessaloniki, Greece, and over the last seventeen years I’ve lived in the UK, Belgium, France, and the Netherlands. Beyond aviation, I’m a lifelong photographer -darkroom to digital- drawn to landscapes, street scenes, aircraft, and the places I travel. Music is a constant companion; I’ve been collecting records and other physical formats for more than three decades. I now live in Amsterdam, where you’ll often find me building LEGO sets with my three children.
       </p>
     </div>
   </div>
 </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Find me on:</p>
-      <div class="links">
-        <a>asterisa[at]gmail[dot]com</a>
-        <a href="https://www.linkedin.com/in/asterisapostolidis/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=Ocz8SvgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      </div>
-    </section>
+<section id="contact" class="section contact-section section-divided">
+  <h2>Contact &amp; Collaboration</h2>
+
+  <p class="contact-intro">
+    I am open to selected professional conversations and collaborations around aviation, aerospace, technology, applied research, technical writing, lecturing, and mentoring.
+  </p>
+
+  <div class="contact-links">
+    <a class="contact-link" href="mailto:asterisa@gmail.com">asterisa[at]gmail[dot]com</a>
+    <a class="contact-link" href="https://www.linkedin.com/in/asterisapostolidis/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="contact-link" href="https://scholar.google.com/citations?user=Ocz8SvgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  </div>
+</section>
     
   </main>
 
@@ -321,14 +324,12 @@
     <p>© <span id="year"></span> Asteris Apostolidis. All rights reserved.</p>
   </footer>
 
-
   <div id="about-lightbox" class="about-lightbox" hidden>
     <button class="about-lightbox-close" type="button" onclick="closeAboutLightbox()" aria-label="Close larger collage">×</button>
     <img src="./assets/about-collage.jpg" alt="Selected professional and aviation moments from Dr Asteris Apostolidis">
   </div>
 
   <script src="./script.js"></script>
-  <script src="./highlights/highlights.js"></script>
   <script src="./media/media-sections.js"></script>
 </body>
 </html>
