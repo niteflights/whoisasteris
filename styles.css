@@ -1068,4 +1068,30 @@ main > section.landing-hero#top .landing-actions{
     padding: .34rem .58rem;
   }
 }
+/* MOBILE HERO: reduce gap between photo and logo without letting logo overlap photo */
+@media (max-width: 820px){
+  main > section.landing-hero#top{
+    gap: 0 !important;
+    padding-top: 28px !important;
+    padding-bottom: 18px !important;
+  }
 
+  main > section.landing-hero#top > .landing-image{
+    position: relative !important;
+    z-index: 2 !important;
+    margin-bottom: 0 !important;
+  }
+
+  main > section.landing-hero#top > .landing-copy{
+    position: relative !important;
+    z-index: 1 !important;
+    margin-top: -42px !important;
+    padding-top: 0 !important;
+  }
+
+  .hero-logo,
+  .hero-wordmark{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
