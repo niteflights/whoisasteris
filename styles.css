@@ -1008,3 +1008,62 @@ main > section.landing-hero#top .landing-actions{
     line-height: 1.42;
   }
 }
+/* Contact & Collaboration */
+.contact-section{
+  padding-bottom: 42px;
+}
+
+.contact-intro{
+  max-width: 720px;
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.contact-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: .9rem;
+}
+
+.contact-link,
+.contact-link:visited{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .38rem .7rem;
+  border: 1px solid rgba(0,0,0,.18);
+  border-radius: 999px;
+  color: #111 !important;
+  background: #fff;
+  text-decoration: none !important;
+  font-size: .86rem;
+  line-height: 1.2;
+  transition: background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible{
+  background: #111;
+  color: #fff !important;
+  border-color: #111;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px){
+  .contact-intro{
+    font-size: .95rem;
+  }
+
+  .contact-links{
+    gap: .45rem;
+  }
+
+  .contact-link{
+    font-size: .82rem;
+    padding: .34rem .58rem;
+  }
+}
