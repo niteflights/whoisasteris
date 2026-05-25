@@ -1106,3 +1106,6 @@ main > section.landing-hero#top .landing-actions{
     margin-top: -2.4rem !important;
   }
 }
+.contact-link-static{
+  cursor: default;
+}
