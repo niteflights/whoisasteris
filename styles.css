@@ -1,18 +1,18 @@
 :root {
   --bg: #ffffff;
-  --panel: #f6f7fb;
-  --text: #1b1f24;
-  --muted: #667085;
-  --accent: #2057d6;
-  --ring: rgba(32, 87, 214, 0.18);
-  --border: rgba(0,0,0,.08);
+  --panel: #f7f7f5;
+  --text: #202124;
+  --muted: #6f747c;
+  --accent: #181818;
+  --ring: rgba(0, 0, 0, 0.08);
+  --border: rgba(0,0,0,.075);
 }
 :root.dark { --bg:#0b0c10; --panel:#111218; --text:#e6e6e6; --muted:#a3a3a3; --accent:#5a8bff; --ring:rgba(90,139,255,.25); --border:rgba(255,255,255,.08); }
 
-:root { --font-sans: "Trebuchet MS", "Segoe UI", system-ui, -apple-system, Roboto, Inter, Helvetica, Arial, sans-serif; }
+:root { --font-sans: Inter, "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif; }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: var(--bg); color: var(--text); line-height: 1.65; }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: var(--bg); color: var(--text); line-height: 1.7; }
 
 a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
 img { max-width: 100%; height: auto; }
@@ -36,7 +36,7 @@ img { max-width: 100%; height: auto; }
 .btn.ghost{ background:transparent; color:var(--accent); border:1px solid var(--accent) }
 
 .section{ padding:34px 1rem; max-width:980px; margin:0 auto }
-.section h2{ font-size:1.55rem; margin:0 0 .7rem }
+.section h2{ font-size:1.48rem; margin:0 0 .7rem; letter-spacing:.01em; font-weight:700; }
 .bullets{ margin:.4rem 0 0; padding-left:1rem }
 .list{ padding-left:1rem }
 
@@ -101,10 +101,9 @@ img { max-width: 100%; height: auto; }
 
 /* Smaller tile visuals */
 .tiles--compact .tile img {
-  height: 120px;             /* was 160px */
+  height: 360px;
   object-fit: cover;
 }
-.tiles--compact .tile img { height: 360px; }
 .tiles--compact .tile-body { padding: 10px; }
 .tiles--compact .tile-body h3 { font-size: 0.98rem; margin: 0 0 4px; }
 .tiles--compact .tile-body p  { font-size: 0.92rem; margin: 0 0 6px; }
@@ -179,8 +178,8 @@ img { max-width: 100%; height: auto; }
 /* Make all links black with an underline */
 a,
 a:visited {
-  color: #111 !important;                 /* black */
-  text-decoration: underline;             /* keep underline */
+  color: var(--accent) !important;
+  text-decoration: underline;
   text-underline-offset: 3px;
 }
 
@@ -562,7 +561,7 @@ main > section.landing-hero#top .landing-actions a.btn.ghost:visited{
   background: transparent !important;
   background-color: transparent !important;
   color: #111 !important;
-  border: 1px solid rgba(0,0,0,.24) !important;
+  border: 1px solid rgba(0,0,0,.16) !important;
   box-shadow: none !important;
   padding: .32rem .58rem !important;
   border-radius: 999px !important;
@@ -634,7 +633,7 @@ main > section.landing-hero#top .landing-actions a.btn.ghost:focus-visible{
   main > section.landing-hero#top .landing-actions a.btn.ghost:visited{
     background: transparent !important;
     color: #111 !important;
-    border: 1px solid rgba(0,0,0,.24) !important;
+    border: 1px solid rgba(0,0,0,.16) !important;
     box-shadow: none !important;
     font-size: .70rem !important;
     padding: .30rem .50rem !important;
@@ -809,26 +808,9 @@ main > section.landing-hero#top .landing-actions{
   display: block;
   width: 72px;
   height: 1px;
-  background: rgba(0,0,0,.18);
+  background: rgba(0,0,0,.14);
   margin: 0 0 28px;
 }
-/* MOBILE HERO GAP REVERT: restore original spacing between photo and logo/name */
-@media (max-width: 820px){
-  main > section.landing-hero#top{
-    gap: 1rem !important;
-    padding-top: 28px !important;
-    padding-bottom: 20px !important;
-  }
-
-  main > section.landing-hero#top > .landing-image{
-    margin-bottom: 0 !important;
-  }
-
-  main > section.landing-hero#top > .landing-copy{
-    margin-top: 0 !important;
-  }
-}
-
 /* Collapsible sections */
 .collapsible-section details{
   border: 0;
@@ -950,10 +932,10 @@ main > section.landing-hero#top .landing-actions{
   margin-bottom: .45rem;
   font-size: .72rem;
   line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: .12em;
+  font-weight: 600;
+  letter-spacing: .10em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.72);
+  color: rgba(255,255,255,.68);
 }
 
 .project-panel h3{
@@ -1015,7 +997,7 @@ main > section.landing-hero#top .landing-actions{
 }
 
 .contact-intro{
-  max-width: 980px;
+  max-width: none;
   margin: 0 0 1rem;
   color: var(--text);
   font-size: 1.02rem;
@@ -1035,7 +1017,7 @@ main > section.landing-hero#top .landing-actions{
   align-items: center;
   justify-content: center;
   padding: .38rem .7rem;
-  border: 1px solid rgba(0,0,0,.18);
+  border: 1px solid rgba(0,0,0,.16);
   border-radius: 999px;
   color: #111 !important;
   background: #fff;
@@ -1085,7 +1067,7 @@ main > section.landing-hero#top .landing-actions{
   main > section.landing-hero#top > .landing-copy{
     position: relative !important;
     z-index: 1 !important;
-    margin-top: -42px !important;
+    margin-top: -50px !important;
     padding-top: 0 !important;
   }
 
