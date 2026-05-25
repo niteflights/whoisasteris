@@ -1077,3 +1077,32 @@ main > section.landing-hero#top .landing-actions{
     margin-bottom: 0 !important;
   }
 }
+
+/* HERO ALIGNMENT REFINEMENT: remove mission button and align hero actions with portrait */
+@media (min-width: 821px){
+  main > section.landing-hero#top{
+    align-items: end !important;
+  }
+
+  main > section.landing-hero#top > .landing-copy{
+    align-self: end !important;
+    transform: translateY(-8px) !important;
+  }
+
+  main > section.landing-hero#top > .landing-image{
+    align-self: end !important;
+  }
+
+  main > section.landing-hero#top .landing-actions{
+    justify-content: center !important;
+    margin-top: -4.2rem !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Mobile: keep photo above logo and keep LinkedIn/CV below the wordmark */
+@media (max-width: 820px){
+  main > section.landing-hero#top .landing-actions{
+    margin-top: -2.4rem !important;
+  }
+}
