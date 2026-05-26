@@ -17,7 +17,7 @@
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0b57b74e24954432addccdb745a96f67"}'></script>
   <!-- End Cloudflare Web Analytics -->
-  <link rel="stylesheet" href="./styles.css?v=hero-logo-buttons-aligned-1" />
+  <link rel="stylesheet" href="./styles.css?v=evidence-cards-fade-1" />
   <link rel="stylesheet" href="./media/media-sections.css">
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
@@ -25,6 +25,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="./assets/site.webmanifest">
   <meta name="theme-color" content="#111111">
+  <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
 <body>
   <header class="site-header">
@@ -198,48 +199,149 @@
   </details>
 </section>
     
-    <section id="programmes" class="section collapsible-section">
-      
+    <section id="programmes" class="section collapsible-section evidence-section">
   <details open>
-    <summary><h2>Industrial & Academic Consortia</h2></summary>
-<ul class="list">
-        <li>Bright Sky — Innovations in Predictive Maintenance, MRO, Security, Training (RVO R&D Mobility Fund, 2021-2025).</li>
-        <li>HECARRUS — Hybrid-electric small commuter aircraft conceptual design (European Commission — H2020, 2019-2022).</li>
-        <li>ReMAP — Real-time CBM for Adaptive Aircraft Maintenance Planning (European Commission — H2020, 2018-2022).</li>
-        <li>CIMPLO — Cross-industry Predictive Maintenance & Dynamic scheduling platform (NWO Smart Industry, 2017-2022).</li>
-        <li>Data Mining in MRO — Data Analytics & Predictive Maintenance in aviation MRO (NWO / SIA RAAK MKB, 2016-2019).</li>
-      </ul>
+    <summary><h2>Industrial &amp; Academic Consortia</h2></summary>
+
+    <div class="evidence-grid">
+      <article class="evidence-card reveal">
+        <span class="evidence-tag">RVO · 2021–2025</span>
+        <h3>Bright Sky</h3>
+        <p>Innovations in predictive maintenance, MRO, security, and training.</p>
+      </article>
+
+      <article class="evidence-card reveal">
+        <span class="evidence-tag">H2020 · 2019–2022</span>
+        <h3>HECARRUS</h3>
+        <p>Hybrid-electric small commuter aircraft conceptual design.</p>
+      </article>
+
+      <article class="evidence-card reveal">
+        <span class="evidence-tag">H2020 · 2018–2022</span>
+        <h3>ReMAP</h3>
+        <p>Real-time condition-based maintenance for adaptive aircraft maintenance planning.</p>
+      </article>
+
+      <article class="evidence-card reveal">
+        <span class="evidence-tag">NWO Smart Industry · 2017–2022</span>
+        <h3>CIMPLO</h3>
+        <p>Cross-industry predictive maintenance and dynamic scheduling platform.</p>
+      </article>
+
+      <article class="evidence-card reveal">
+        <span class="evidence-tag">NWO / SIA RAAK MKB · 2016–2019</span>
+        <h3>Data Mining in MRO</h3>
+        <p>Data analytics and predictive maintenance in aviation MRO operations.</p>
+      </article>
+    </div>
   </details>
 </section>
 
-    <section id="publications" class="section collapsible-section">
-      
+    <section id="publications" class="section collapsible-section evidence-section">
   <details open>
     <summary><h2>Selected Publications</h2></summary>
-<p>Peer-reviewed papers, conference proceedings and book chapters on predictive maintenance, diagnostics & prognostics, trustworthy AI, and gas turbine modelling.</p>
-      <ul class="list">
-        <li><em>"Electric Aircraft Operations: An Interisland Mobility Case Study"</em>, Aerospace (2024).</li>
-        <li><em>“AI-Based EGT Prediction for Trustworthy Safety-Critical Applications”</em>, Aerospace (2022).</li>
-        <li><em>"Automated machine learning for remaining life estimation of aircraft engines"</em>, ΙΕΕΕ (2021).</li>
-        <li><em>“Aviation Data Analytics in MRO Operations: Prospects and Pitfalls”</em>, PHM Society RAMS (2020).</li>
-        <li><em>“A tabu search-based memetic algorithm for multi-objective job shop scheduling"</em>, GECCO (2019).</li>
-        <p><a href="https://scholar.google.com/citations?user=Ocz8SvgAAAAJ&hl=en" target="_blank" rel="noopener">See the full list in Google Scholar →</a></p>
-      </ul>
+
+    <p class="section-note">
+      Peer-reviewed papers, conference proceedings and book chapters on predictive maintenance, diagnostics &amp; prognostics, trustworthy AI, and gas turbine modelling.
+    </p>
+
+    <div class="publication-list">
+      <article class="publication-card reveal">
+        <span class="evidence-year">2024</span>
+        <div>
+          <h3>Electric Aircraft Operations: An Interisland Mobility Case Study</h3>
+          <p>Aerospace</p>
+        </div>
+      </article>
+
+      <article class="publication-card reveal">
+        <span class="evidence-year">2022</span>
+        <div>
+          <h3>AI-Based EGT Prediction for Trustworthy Safety-Critical Applications</h3>
+          <p>Aerospace</p>
+        </div>
+      </article>
+
+      <article class="publication-card reveal">
+        <span class="evidence-year">2021</span>
+        <div>
+          <h3>Automated machine learning for remaining life estimation of aircraft engines</h3>
+          <p>IEEE</p>
+        </div>
+      </article>
+
+      <article class="publication-card reveal">
+        <span class="evidence-year">2020</span>
+        <div>
+          <h3>Aviation Data Analytics in MRO Operations: Prospects and Pitfalls</h3>
+          <p>PHM Society RAMS</p>
+        </div>
+      </article>
+
+      <article class="publication-card reveal">
+        <span class="evidence-year">2019</span>
+        <div>
+          <h3>A tabu search-based memetic algorithm for multi-objective job shop scheduling</h3>
+          <p>GECCO</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="section-link">
+      <a href="https://scholar.google.com/citations?user=Ocz8SvgAAAAJ&amp;hl=en" target="_blank" rel="noopener">See the full list in Google Scholar →</a>
+    </p>
   </details>
 </section>
 
-    <section id="talks" class="section collapsible-section">
-      
+    <section id="talks" class="section collapsible-section evidence-section">
   <details open>
-<p>Delivered more than forty invited talks, keynotes, lectures, and expert panel contributions across topics ranging from airline strategy and the future of aerospace to emerging technologies and trustworthy AI.</p>
     <summary><h2>Selected Invited Talks</h2></summary>
-<ul class="list">
-        <li>Expert Panel: <em>“The continuum of compute”</em>, Annual Quantum Global 2026, The Economist, London, UK (2026).</li>
-        <li>Invited Talk: <em>“Innovation Beyond AI: What is Next”</em>, EUROCONTROL Innovation Hub, Paris, France (2025).</li>
-        <li>Keynote: <em>“Revolutionising aerospace with trustworthy AI”</em>, Aviation Technology Forum, Guangzhou, China (2025).</li>
-        <li>Invited Talk: <em>"Towards Net-Zero Aviation with AI”</em>, Georgia Institute of Technology, Atlanta, USA (2024).</li>
-        <li>Invited Lecture: <em>“AI for Aviation MRO”</em>, Responsible AI Series, The Alan Turing Institute, UK (2022).</li>
-      </ul>
+
+    <p class="section-note">
+      Delivered more than forty invited talks, keynotes, lectures, and expert panel contributions across airline strategy, the future of aerospace, emerging technologies, and trustworthy AI.
+    </p>
+
+    <div class="talk-timeline">
+      <article class="talk-item reveal">
+        <span class="evidence-year">2026</span>
+        <div>
+          <h3>The continuum of compute</h3>
+          <p>Expert Panel · Annual Quantum Global, The Economist · London, UK</p>
+        </div>
+      </article>
+
+      <article class="talk-item reveal">
+        <span class="evidence-year">2025</span>
+        <div>
+          <h3>Innovation Beyond AI: What is Next</h3>
+          <p>Invited Talk · EUROCONTROL Innovation Hub · Paris, France</p>
+        </div>
+      </article>
+
+      <article class="talk-item reveal">
+        <span class="evidence-year">2025</span>
+        <div>
+          <h3>Revolutionising aerospace with trustworthy AI</h3>
+          <p>Keynote · Aviation Technology Forum · Guangzhou, China</p>
+        </div>
+      </article>
+
+      <article class="talk-item reveal">
+        <span class="evidence-year">2024</span>
+        <div>
+          <h3>Towards Net-Zero Aviation with AI</h3>
+          <p>Invited Talk · Georgia Institute of Technology · Atlanta, USA</p>
+        </div>
+      </article>
+
+      <article class="talk-item reveal">
+        <span class="evidence-year">2022</span>
+        <div>
+          <h3>AI for Aviation MRO</h3>
+          <p>Invited Lecture · Responsible AI Series, The Alan Turing Institute · UK</p>
+        </div>
+      </article>
+    </div>
   </details>
 </section>
 
@@ -335,5 +437,25 @@
 
   <script src="./script.js"></script>
   <script src="./media/media-sections.js"></script>
+  <script>
+    (() => {
+      const items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+      const show = (item) => item.classList.add('is-visible');
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(show);
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            show(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      items.forEach((item) => observer.observe(item));
+    })();
+  </script>
 </body>
 </html>

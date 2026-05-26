@@ -1109,3 +1109,159 @@ main > section.landing-hero#top .landing-actions{
 .contact-link-static{
   cursor: default;
 }
+
+/* Evidence sections: compact cards, timelines, and subtle scroll reveal */
+.evidence-section .section-note{
+  max-width: none;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: .98rem;
+  line-height: 1.6;
+}
+
+.evidence-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.evidence-card,
+.publication-card,
+.talk-item{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: .95rem 1rem;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
+}
+
+.evidence-card:hover,
+.publication-card:hover,
+.talk-item:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.055);
+  border-color: rgba(0,0,0,.14);
+  background: #fff;
+}
+
+.evidence-tag{
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: .45rem;
+  padding: .18rem .5rem;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 999px;
+  color: var(--muted);
+  background: #fff;
+  font-size: .72rem;
+  line-height: 1.2;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.evidence-card h3,
+.publication-card h3,
+.talk-item h3{
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: -.01em;
+}
+
+.evidence-card p,
+.publication-card p,
+.talk-item p{
+  margin: .32rem 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.publication-list,
+.talk-timeline{
+  display: grid;
+  gap: 10px;
+}
+
+.publication-card,
+.talk-item{
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: .85rem;
+  align-items: start;
+}
+
+.evidence-year{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  padding: .22rem .42rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.12);
+  color: var(--text);
+  background: #fff;
+  font-size: .74rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.section-link{
+  margin: .9rem 0 0;
+}
+
+.reveal{
+  opacity: 1;
+  transform: none;
+}
+
+.js-enabled .reveal{
+  opacity: 0;
+  transform: translateY(9px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+
+.js-enabled .reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .js-enabled .reveal{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .evidence-card,
+  .publication-card,
+  .talk-item{
+    transition: none;
+  }
+
+  .evidence-card:hover,
+  .publication-card:hover,
+  .talk-item:hover{
+    transform: none;
+  }
+}
+
+@media (max-width: 760px){
+  .evidence-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card,
+  .talk-item{
+    grid-template-columns: 1fr;
+    gap: .45rem;
+  }
+
+  .evidence-card,
+  .publication-card,
+  .talk-item{
+    padding: .85rem .9rem;
+  }
+}
