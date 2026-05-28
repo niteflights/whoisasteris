@@ -1262,3 +1262,48 @@ main > section.landing-hero#top .landing-actions{
   .editorial-body p{ font-size: .9rem; }
   .js-enabled .editorial-list .reveal{ transition-delay: 0s; }
 }
+/* Proof banner overlay text */
+.proof-visual-caption{
+  position: absolute;
+  left: 2rem;
+  bottom: 1.6rem;
+  z-index: 2;
+  max-width: 560px;
+  color: #fff;
+}
+
+.proof-visual-caption strong{
+  display: block;
+  margin-bottom: .35rem;
+  color: #fff;
+  font-size: clamp(1.35rem, 2.3vw, 2rem);
+  line-height: 1.08;
+  letter-spacing: -.025em;
+  font-weight: 700;
+}
+
+.proof-visual-caption span{
+  display: block;
+  max-width: 520px;
+  color: rgba(255,255,255,.84);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px){
+  .proof-visual-caption{
+    left: 1.1rem;
+    right: 1.1rem;
+    bottom: 1rem;
+    max-width: none;
+  }
+
+  .proof-visual-caption strong{
+    font-size: 1.28rem;
+  }
+
+  .proof-visual-caption span{
+    font-size: .86rem;
+    line-height: 1.4;
+  }
+}
