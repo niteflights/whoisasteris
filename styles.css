@@ -1307,3 +1307,50 @@ main > section.landing-hero#top .landing-actions{
     line-height: 1.4;
   }
 }
+
+/* Start fade-in earlier: Selected Projects */
+.selected-projects summary.reveal{
+  display: flex;
+}
+
+.js-enabled .project-stack .reveal:nth-child(1){ transition-delay: .04s; }
+.js-enabled .project-stack .reveal:nth-child(2){ transition-delay: .11s; }
+.js-enabled .project-stack .reveal:nth-child(3){ transition-delay: .18s; }
+.js-enabled .project-stack .reveal:nth-child(4){ transition-delay: .25s; }
+.js-enabled .project-stack .reveal:nth-child(5){ transition-delay: .32s; }
+
+@media (prefers-reduced-motion: reduce){
+  .js-enabled .project-stack .reveal{
+    transition-delay: 0s;
+  }
+}
+
+/* Responsive organisation logo panel */
+.logo-panel-section{
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+
+.logo-panel-picture{
+  display: block;
+  width: 100%;
+}
+
+.logo-panel-picture img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px){
+  .logo-panel-section{
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  .logo-panel-picture img{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
