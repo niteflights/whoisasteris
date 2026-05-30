@@ -1222,7 +1222,7 @@ main > section.landing-hero#top .landing-actions{
   line-height: 1.55;
 }
 
-.publication-editorial-list .editorial-body h3{ font-weight: 600; }
+.publication-editorial-list .editorial-body h3{ font-weight: 400; }
 .proof-link{ margin: .9rem 0 0; }
 .proof-link a{ color: var(--accent) !important; }
 
