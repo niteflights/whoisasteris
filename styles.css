@@ -1299,7 +1299,12 @@ main > section.landing-hero#top .landing-actions{
     bottom: 1rem;
     max-width: none;
   }
-
+@media (max-width: 760px){
+  .proof-visual-caption span{
+    white-space: normal;
+  }
+}
+  
   .proof-visual-caption strong{
     font-size: 1.28rem;
   }
