@@ -1375,3 +1375,34 @@ main > section.landing-hero#top .landing-actions{
   line-height: 1.55;
   font-weight: 400;
 }
+/* Article tiles: darker cinematic image treatment */
+.tile{
+  position: relative;
+  background: #111;
+}
+
+.tile img{
+  filter: grayscale(18%) brightness(.62) contrast(1.08);
+  transition: transform .45s ease, filter .45s ease;
+}
+
+.tile:hover img{
+  transform: scale(1.035);
+  filter: grayscale(8%) brightness(.70) contrast(1.1);
+}
+
+.tile::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,0,0,.22) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tile-body{
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
