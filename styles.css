@@ -1368,3 +1368,10 @@ main > section.landing-hero#top .landing-actions{
     transform: translateY(-8px);
   }
 }
+.publication-citation{
+  margin: 0;
+  color: var(--text);
+  font-size: .96rem;
+  line-height: 1.55;
+  font-weight: 400;
+}
