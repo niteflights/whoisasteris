@@ -1421,7 +1421,7 @@ main > section.landing-hero#top .landing-actions{
   main > section.landing-hero#top .landing-actions{
     position: relative !important;
     z-index: 5 !important;
-    margin-top: -0.2rem !important;
+    margin-top: -0.3rem !important;
     margin-bottom: 0 !important;
   }
 }
