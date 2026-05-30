@@ -1086,7 +1086,7 @@ main > section.landing-hero#top .landing-actions{
 
   main > section.landing-hero#top > .landing-copy{
     align-self: end !important;
-    transform: translateY(-8px) !important;
+    transform: translateY(0px) !important;
   }
 
   main > section.landing-hero#top > .landing-image{
@@ -1414,7 +1414,7 @@ main > section.landing-hero#top .landing-actions{
 /* FINAL FIX: keep hero buttons visible below the wordmark */
 @media (min-width: 821px){
   main > section.landing-hero#top .hero-wordmark{
-    transform: translateY(-8px) !important;
+    transform: translateY(0px) !important;
     margin-bottom: .55rem !important;
   }
 
