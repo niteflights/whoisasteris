@@ -1529,5 +1529,5 @@ main > section.landing-hero#top .landing-actions{
 }
 #videos .media-card img,
 #videos .media-thumb img{
-  filter: grayscale(35%) brightness(.78) contrast(1.05) !important;
+  filter: grayscale(50%) brightness(.65) contrast(1.08) !important;
 }
