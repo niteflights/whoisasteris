@@ -9,13 +9,21 @@
 .media-desc{margin:0;color:var(--muted,#6b7280);font-size:.95rem}
 .media-embed{width:100%;aspect-ratio:16/9;border:0}
 @media (max-width:480px){.media-embed{aspect-ratio:auto;height:280px}}
-/* Video thumbnails: quieter monochrome treatment */
-#videos-grid img{
+
+/* Video thumbnails / embeds: quieter monochrome treatment
+   YouTube videos are rendered as iframes, not images, so the filter must target iframe.media-embed too. */
+#videos-grid .media-media{
+  overflow: hidden;
+  background: #fff;
+}
+
+#videos-grid .media-media img,
+#videos-grid .media-media iframe.media-embed{
   filter: grayscale(40%) brightness(.70) contrast(1.08) !important;
   transition: filter .35s ease, transform .35s ease !important;
 }
 
-#videos-grid a:hover img,
-#videos-grid article:hover img{
+#videos-grid .media-card:hover .media-media img,
+#videos-grid .media-card:hover .media-media iframe.media-embed{
   filter: grayscale(15%) brightness(.82) contrast(1.08) !important;
 }
