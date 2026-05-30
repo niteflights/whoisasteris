@@ -1500,3 +1500,11 @@ main > section.landing-hero#top .landing-actions{
   line-height: 1.35;
   text-align: center;
 }
+/* Section intro text consistency */
+.collapsible-section summary + p,
+.collapsible-section .proof-note{
+  color: var(--muted) !important;
+  font-size: .98rem;
+  line-height: 1.65;
+  max-width: 920px;
+}
