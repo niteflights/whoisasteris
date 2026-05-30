@@ -1525,9 +1525,4 @@ main > section.landing-hero#top .landing-actions{
 @media (max-width: 760px){
   .section-divided{
     padding-top: 34px !important;
-  }
-}
-#videos .media-card img,
-#videos .media-thumb img{
-  filter: grayscale(50%) brightness(.65) contrast(1.08) !important;
 }
