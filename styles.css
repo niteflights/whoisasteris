@@ -1527,31 +1527,7 @@ main > section.landing-hero#top .landing-actions{
     padding-top: 34px !important;
   }
 }
-/* Video thumbnails: quieter editorial treatment */
-#videos .media-card,
-#videos .media-thumb{
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-}
-
 #videos .media-card img,
 #videos .media-thumb img{
   filter: grayscale(35%) brightness(.78) contrast(1.05) !important;
-  transition: filter .35s ease, transform .35s ease !important;
-}
-
-#videos .media-card::after,
-#videos .media-thumb::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,.12);
-  pointer-events: none;
-  z-index: 1;
-}
-
-#videos .media-card:hover img,
-#videos .media-thumb:hover img{
-  filter: grayscale(12%) brightness(.88) contrast(1.08) !important;
 }
