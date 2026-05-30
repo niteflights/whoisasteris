@@ -1475,3 +1475,16 @@ main > section.landing-hero#top .landing-actions{
   z-index: 2 !important;
   background: #fff !important;
 }
+/* Role tiles: cleaner white treatment */
+.item.appt{
+  background: #fff !important;
+  border-color: rgba(0,0,0,.12) !important;
+  box-shadow: none;
+}
+
+.item.appt:hover,
+.item.appt:focus-within{
+  background: #fff !important;
+  border-color: rgba(0,0,0,.22) !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.055) !important;
+}
