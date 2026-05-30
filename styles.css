@@ -1488,3 +1488,15 @@ main > section.landing-hero#top .landing-actions{
   border-color: rgba(0,0,0,.22) !important;
   box-shadow: 0 10px 24px rgba(0,0,0,.055) !important;
 }
+/* About collage caption */
+.about-collage-figure{
+  margin: 0;
+}
+
+.about-collage-caption{
+  margin-top: .45rem;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.35;
+  text-align: center;
+}
