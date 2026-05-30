@@ -1512,3 +1512,18 @@ main > section.landing-hero#top .landing-actions{
   line-height: 1.65;
   max-width: 920px;
 }
+/* Cleaner section rhythm: remove inconsistent divider lines */
+.section-divided::before,
+.section-divided.collapsible-section::before{
+  display: none !important;
+}
+
+.section-divided{
+  padding-top: 42px !important;
+}
+
+@media (max-width: 760px){
+  .section-divided{
+    padding-top: 34px !important;
+  }
+}
