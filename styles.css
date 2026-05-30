@@ -1048,7 +1048,7 @@ main > section.landing-hero#top .landing-actions{
     padding: .34rem .58rem;
   }
 }
-/* MOBILE HERO: reduce gap between photo and logo without letting logo overlap photo */
+/* MOBILE HERO: compact spacing without overlap */
 @media (max-width: 820px){
   main > section.landing-hero#top{
     gap: 0 !important;
@@ -1065,7 +1065,7 @@ main > section.landing-hero#top .landing-actions{
   main > section.landing-hero#top > .landing-copy{
     position: relative !important;
     z-index: 1 !important;
-    margin-top: -50px !important;
+    margin-top: -18px !important;
     padding-top: 0 !important;
   }
 
@@ -1222,8 +1222,8 @@ main > section.landing-hero#top .landing-actions{
 
 .js-enabled .reveal{
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity .55s ease, transform .55s ease;
+  transform: translateY(12px);
+  transition: opacity .5s ease, transform .5s ease;
 }
 
 .js-enabled .reveal.is-visible{
@@ -1418,7 +1418,7 @@ main > section.landing-hero#top .landing-actions{
   }
 }
 
-/* FINAL HERO AND ARTICLE OVERRIDES */
+/* FINAL SITE OVERRIDES: hero, reveal, role tiles, article tiles, about caption */
 @media (min-width: 821px){
   main > section.landing-hero#top .hero-wordmark{
     transform: translateY(0) !important;
@@ -1451,7 +1451,24 @@ main > section.landing-hero#top .landing-actions{
   }
 }
 
-/* Article tiles: darker image treatment without bottom stripe */
+.js-enabled .reveal{
+  transform: translateY(12px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.item.appt{
+  background: #fff !important;
+  border-color: rgba(0,0,0,.12) !important;
+  box-shadow: none;
+}
+
+.item.appt:hover,
+.item.appt:focus-within{
+  background: #fff !important;
+  border-color: rgba(0,0,0,.22) !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.055) !important;
+}
+
 .tile{
   background: #fff !important;
 }
@@ -1475,20 +1492,7 @@ main > section.landing-hero#top .landing-actions{
   z-index: 2 !important;
   background: #fff !important;
 }
-/* Role tiles: cleaner white treatment */
-.item.appt{
-  background: #fff !important;
-  border-color: rgba(0,0,0,.12) !important;
-  box-shadow: none;
-}
 
-.item.appt:hover,
-.item.appt:focus-within{
-  background: #fff !important;
-  border-color: rgba(0,0,0,.22) !important;
-  box-shadow: 0 10px 24px rgba(0,0,0,.055) !important;
-}
-/* About collage caption */
 .about-collage-figure{
   margin: 0;
 }
@@ -1500,7 +1504,7 @@ main > section.landing-hero#top .landing-actions{
   line-height: 1.35;
   text-align: center;
 }
-/* Section intro text consistency */
+
 .collapsible-section summary + p,
 .collapsible-section .proof-note{
   color: var(--muted) !important;
