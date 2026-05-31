@@ -1076,19 +1076,18 @@ main > section.landing-hero#top .landing-actions{
   }
 }
 
-/* HERO ALIGNMENT REFINEMENT: align hero actions with portrait */
+/* HERO ALIGNMENT REFINEMENT: neutralised; final hero block below controls desktop alignment */
 @media (min-width: 821px){
   main > section.landing-hero#top{
-    align-items: end !important;
+    align-items: center !important;
   }
 
   main > section.landing-hero#top > .landing-copy{
-    align-self: end !important;
-    transform: translateY(0) !important;
+    align-self: center !important;
   }
 
   main > section.landing-hero#top > .landing-image{
-    align-self: end !important;
+    align-self: center !important;
   }
 }
 
@@ -1539,8 +1538,6 @@ main > section.landing-hero#top .landing-actions{
     margin-bottom: 0 !important;
   }
 }
-
-/* HERO FINAL POSITIONING: align wordmark/buttons with portrait */
 @media (min-width: 821px){
   main > section.landing-hero#top{
     align-items: center !important;
@@ -1583,7 +1580,6 @@ main > section.landing-hero#top .landing-actions{
     margin-top: -1.1rem !important;
   }
 }
-/* HERO FINAL POSITIONING: lower logo block, bring buttons closer */
 @media (min-width: 821px){
   main > section.landing-hero#top{
     align-items: center !important;
@@ -1605,5 +1601,57 @@ main > section.landing-hero#top .landing-actions{
     justify-content: center !important;
     margin-top: -1.7rem !important;
     margin-bottom: 0 !important;
+  }
+}
+
+/* FINAL HERO LAYOUT — desktop logo/button vertical alignment */
+@media (min-width: 821px){
+  main > section.landing-hero#top{
+    align-items: center !important;
+  }
+
+  main > section.landing-hero#top > .landing-copy{
+    align-self: center !important;
+    position: relative !important;
+    top: 46px !important;          /* increase to lower logo+buttons; decrease to raise them */
+    transform: none !important;
+  }
+
+  main > section.landing-hero#top > .landing-image{
+    align-self: center !important;
+  }
+
+  main > section.landing-hero#top .hero-wordmark{
+    transform: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  main > section.landing-hero#top .landing-actions{
+    position: relative !important;
+    z-index: 5 !important;
+    justify-content: center !important;
+    margin-top: -1.6rem !important; /* more negative = buttons closer to logo */
+    margin-bottom: 0 !important;
+  }
+}
+
+/* FINAL HERO LAYOUT — mobile unchanged/safe */
+@media (max-width: 820px){
+  main > section.landing-hero#top > .landing-copy{
+    position: relative !important;
+    margin-top: -18px !important;
+    top: auto !important;
+  }
+
+  main > section.landing-hero#top .hero-wordmark{
+    transform: none !important;
+    margin-top: 0 !important;
+    margin-bottom: .35rem !important;
+  }
+
+  main > section.landing-hero#top .landing-actions{
+    position: relative !important;
+    z-index: 5 !important;
+    margin-top: -1.1rem !important;
   }
 }
