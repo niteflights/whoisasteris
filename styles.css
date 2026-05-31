@@ -1591,7 +1591,7 @@ main > section.landing-hero#top .landing-actions{
 
   main > section.landing-hero#top > .landing-copy{
     align-self: center !important;
-    transform: translateY(34px) !important;
+    transform: translateY(55px) !important;
   }
 
   main > section.landing-hero#top .hero-wordmark{
@@ -1603,7 +1603,7 @@ main > section.landing-hero#top .landing-actions{
     position: relative !important;
     z-index: 5 !important;
     justify-content: center !important;
-    margin-top: -1.3rem !important;
+    margin-top: -1.7rem !important;
     margin-bottom: 0 !important;
   }
 }
