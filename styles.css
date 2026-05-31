@@ -1526,3 +1526,17 @@ main > section.landing-hero#top .landing-actions{
   .section-divided{
     padding-top: 34px !important;
 }
+/* HERO FINAL POSITIONING: lower wordmark, pull buttons closer */
+@media (min-width: 821px){
+  main > section.landing-hero#top .hero-wordmark{
+    transform: translateY(38px) !important;
+    margin-bottom: 0 !important;
+  }
+
+  main > section.landing-hero#top .landing-actions{
+    position: relative !important;
+    z-index: 5 !important;
+    margin-top: -1.2rem !important;
+    margin-bottom: 0 !important;
+  }
+}
