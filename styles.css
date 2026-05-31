@@ -1630,7 +1630,7 @@ main > section.landing-hero#top .landing-actions{
     position: relative !important;
     z-index: 5 !important;
     justify-content: center !important;
-    margin-top: -1.6rem !important; /* more negative = buttons closer to logo */
+    margin-top: -2.2rem !important; /* more negative = buttons closer to logo */
     margin-bottom: 0 !important;
   }
 }
