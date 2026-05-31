@@ -1583,3 +1583,27 @@ main > section.landing-hero#top .landing-actions{
     margin-top: -1.1rem !important;
   }
 }
+/* HERO FINAL POSITIONING: lower logo block, bring buttons closer */
+@media (min-width: 821px){
+  main > section.landing-hero#top{
+    align-items: center !important;
+  }
+
+  main > section.landing-hero#top > .landing-copy{
+    align-self: center !important;
+    transform: translateY(34px) !important;
+  }
+
+  main > section.landing-hero#top .hero-wordmark{
+    transform: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  main > section.landing-hero#top .landing-actions{
+    position: relative !important;
+    z-index: 5 !important;
+    justify-content: center !important;
+    margin-top: -1.3rem !important;
+    margin-bottom: 0 !important;
+  }
+}
