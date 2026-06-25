@@ -1,19 +1,19 @@
 [
   {
     "type": "youtube",
-    "title": "The Economist panel discussion",
+    "title": "The Economist · Panel discussion",
     "desc": "The continuum of compute: AI and data modernisation.",
     "videoId": "PeVmTSgXA1A"
   },
   {    
     "type": "youtube",
-    "title": "Interview World Summit AI",
+    "title": "World Summit AI · Interview",
     "desc": "AI for commercial aviation and the operational impact on airlines.",
     "videoId": "xxs97rkBBPM"
   },
   {
     "type": "youtube",
-    "title": "Interview Aerospace Tech Week",
+    "title": "Aerospace Tech Week · Interview",
     "desc": "Trustworthy AI for Predictive Maintenance and airline operations.",
     "videoId": "H3056OWCMhI"
   }
