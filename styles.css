@@ -1524,7 +1524,9 @@ main > section.landing-hero#top .landing-actions{
 @media (max-width: 760px){
   .section-divided{
     padding-top: 34px !important;
+  }
 }
+
 @media (min-width: 821px){
   main > section.landing-hero#top .hero-wordmark{
     transform: translateY(38px) !important;
